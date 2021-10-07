@@ -1,20 +1,11 @@
+import Header from './components/Header'
+import './assets/css/global.css'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          overLoop
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header fundo="transparente"/>
     </div>
   );
 }

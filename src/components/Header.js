@@ -4,7 +4,7 @@ import logo from '../assets/img/overLoop-logo-white.png'
 function Header({fundo}) {
 
     return (
-        <header className={css.fundo === "transparente" ? css.transparente : css.solid}>
+        <header className={fundo === "transparente" ? css.transparente : css.solid}>
         <a href="index.html"><img className={css.logo} src={logo} alt="Logo da overLoop" /></a>
         <nav>
             <ul>

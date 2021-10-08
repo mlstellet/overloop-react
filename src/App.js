@@ -55,7 +55,7 @@ function App() {
     <div className="App">
       <Header fundo="transparente"/>
 
-      {/* {founders.map((founder) => (
+      {founders.map((founder) => (
         <CardFounders
           key={founder.name}
           name={founder.name}
@@ -63,7 +63,7 @@ function App() {
           avatar={founder.avatar}
           social_icons={founder.social_icons}
         />
-      ))} */}
+      ))}
 
       <Footer />
     </div>

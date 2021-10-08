@@ -1,4 +1,4 @@
-.galery .cards {
+.cards {
     position: relative;
     width: 250px;
     height: 350px;
@@ -8,8 +8,8 @@
     overflow: hidden;
 }
 
-.galery .cards .imgBx,
-.galery .cards .imgBx img {
+.cards .imgBx,
+.cards .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -17,22 +17,22 @@
     height: 100%;
 }
 
-.galery .cards .imgBx {
+.cards .imgBx {
     transition: .5s;
     z-index: 10000;
     transform-origin: top;
 }
 
-.galery .cards:hover .imgBx {
+.cards:hover .imgBx {
     transform: translateY(30px) scale(.5);
 }
 
-.galery .cards .imgBx img {
+.cards .imgBx img {
     object-fit: cover;
     border-radius: 20px;
 }
 
-.galery .cards .content {
+.cards .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -46,11 +46,11 @@
     transition: .5s;
 }
 
-.galery .cards:hover .content {
+.cards:hover .content {
     transform: translateY(0);
 }
 
-.galery .cards .content .details {
+.cards .content .details {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,33 +59,33 @@
     text-align: center;
 }
 
-.galery .cards .content,
-.galery .cards .content ul li a {
+.cards .content,
+.cards .content ul li a {
     color: #fff;
 }
 
-.galery .cards .content .details h4 {
+.cards .content .details h4 {
     font-size: 1.2em;
     font-weight: 500;
 }
 
-.galery .cards .content .details h4 span {
+.cards .content .details h4 span {
     font-size: .8em;
     font-weight: 400;
     color: #F05454;
 }
 
-.galery .cards .content .details .social_icons {
+.cards .content .details .social_icons {
     position: relative;
     display: flex;
     margin-top: 5px;
 }
 
-.galery .cards .content .details .social_icons li {
+.cards .content .details .social_icons li {
     margin: 4px
 }
 
-.galery .cards .content .details .social_icons li a {
+.cards .content .details .social_icons li a {
     width: 45px;
     height: 45px;
 
@@ -100,7 +100,7 @@
     transition: .5s;
 }
 
-.galery .cards .content .details .social_icons li a:hover {
+.cards .content .details .social_icons li a:hover {
     transform: rotate(360deg);
     background: #F05454;
 }

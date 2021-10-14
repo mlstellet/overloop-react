@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+section.top {
+    padding: 70px 0;
+    margin: 100px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.top h1 {
+    padding: 12px;
+    font-family: 'Antic Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+section hr {
+    width: 150px;
+    border: 2px solid #343434;
+}
+
+section.top p {
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+section.top .formulario {
+    width: 60vw;
+    padding: 8px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.top .formulario img.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+
+}
+
+
+
+section.top .formulario .input-localizacao img.icon {
+    margin: 3px 10px;
+
+}
+
+.input_cargo,
+.input_localizacao {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+}
+
+#cargo-empresa {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+section.top .formulario #lupa {
+    width: 34px;
+    height: 34px;
+
+}
+
+.formulario label {
+    display: flex;
+    text-align: center;
+}
+
+input {
+    border: 0;
+    width: 80%;
+    outline: none;
+    font-size: 16px;
+    min-width: 220px;
+}
+
+input::placeholder {
+    color: #AAA9A9;
+    font-family: 'Urbanist', sans-serif;
+}
+
+button#search {
+    width: 48px;
+    height: 46px;
+    background: #F05454;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button#search:hover {
+    background: black;
+}
+
+button#search span {
+    display: none;
+}
+
+
+@media(max-width:1070px) {
+    section.top .formulario {
+        width: 40vw;
+        min-width: 340px;
+        padding: 8px;
+        background-color: none;
+        border-radius: 10px;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    label,
+    input {
+        margin: 5px;
+    }
+
+    .input_cargo,
+    .input_localizacao {
+        width: 80%;
+    }
+
+
+    button#search {
+        width: 150px;
+        height: 40px;
+        max-width: 100%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    button#search img {
+        display: none;
+
+    }
+
+    button#search span {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 14px;
+        color: white;
+    }
+
+}
+
+@media(max-width: 800px) {
+    section.top {
+        margin: 130px 0 0;
+    }
+
+    .input_cargo,
+    .input_localizacao {
+        width: 90%;
+    }
+}

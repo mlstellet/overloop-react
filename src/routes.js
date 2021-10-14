@@ -1,13 +1,15 @@
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Inspiracoes from './pages/Inspiracoes';
 
 function Routes() {
     return (
-        <Switch>
-            <Route path="/home" exact componente={Home}/>
-            <Route path="/inspiracoes" exact componente={Inspiracoes}/>
-        </Switch>
+        <BrowserRouter>
+            <Switch>
+                <Route path="/" exact component={Home}/>
+                <Route path="/inspiracoes" component={Inspiracoes}/>
+            </Switch>
+        </BrowserRouter>
     )
 }
 

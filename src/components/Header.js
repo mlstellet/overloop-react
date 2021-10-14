@@ -8,7 +8,7 @@ function Header({fundo}) {
         <a href="index.html"><img className={css.logo} src={logo} alt="Logo da overLoop" /></a>
         <nav>
             <ul>
-                <li><a href="index.html">home</a></li>
+                <li><a href="/">home</a></li>
                 <li><a href="vagas.html">vagas</a></li>
                 <li><a href="tutoriais.html">tutoriais</a></li>
                 <li><a href="inspiracao.html">inspirações</a></li>

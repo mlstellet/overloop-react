@@ -1,0 +1,16 @@
+.pessoas_imagens div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pessoas_imagens {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: .9fr .1fr 1fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+        "foto-1 foto-2 foto-2"
+        "foto-1 foto-4 foto-5"
+        "foto-3 foto-4 foto-5"; 
+}

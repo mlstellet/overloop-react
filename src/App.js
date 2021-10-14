@@ -9,10 +9,10 @@ import Routes from './routes';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
         <Header fundo="transparente"/>
         <Routes />
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
 
       {/* <Button text="Aprenda agora!"/> */}
 

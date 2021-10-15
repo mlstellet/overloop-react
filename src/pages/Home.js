@@ -1,12 +1,46 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Banner from "../components/Banner"
-import sobreFoto from "../img/foto-sobre-home.png"
 import FlexContainer from "../components/FlexContainer"
 import Painel from "../components/Painel"
 import Button from "../components/Button"
 
+import sobreFoto from "../assets/img/home-sobre.png"
+
 import css from "../assets/css/home.module.css"
+
+const painel = [
+    {
+        "frase":'❝Uma pessoa que nunca cometeu um erro, nunca tentou nada de novo.❞',
+        "autor":"Albert Einstein",
+        "url":"/img/home-painel1.png",
+        "grid_area":"foto-1"
+    },
+    {
+        "frase":'❝Se você não sabe onde quer ir, qualquer caminho serve.❞',
+        "autor":"Alice no País da Maravilhas",
+        "url":"/img/home-painel2.png",
+        "grid_area":"foto-2"
+    },
+    {
+        "frase":'❝Dê o seu melhor todos os dias, mesmo que isso aparente não ter retorno nenhum.❞',
+        "autor":"Alguém disse",
+        "url":"/img/home-painel3.png",
+        "grid_area":"foto-3"
+    },
+    {
+        "frase":'❝Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam.❞',
+        "autor":"Thomas Edison",
+        "url":"/img/home-painel4.png",
+        "grid_area":"foto-4"
+    },
+    {
+        "frase":'❝A melhor maneira de prever o futuro é criá-lo.❞',
+        "autor":"Peter Drucker",
+        "url":"/img/home-painel5.png",
+        "grid_area":"foto-5"
+    }
+]
 
 function Home() {
     return (
@@ -56,38 +90,23 @@ function Home() {
 
             <FlexContainer secao="pessoas">
                     <h2>Pessoas que nos inspiram</h2>
+
                     <div className={css.pessoas_imagens}>
-                        <Painel 
-                            frase="❝Uma pessoa que nunca cometeu um erro, nunca tentou nada de novo.❞"
-                            autor="Albert Einstein"
-                            url="/img/home-painel1.png"
-                            grid_area="foto-1"
-                        />
-                        <Painel 
-                            frase="❝Se você não sabe onde quer ir, qualquer caminho serve.❞"
-                            autor="Alice no País da Maravilhas"
-                            url="/img/home-painel2.png"
-                            grid_area="foto-2"
-                        />
-                        <Painel 
-                            frase="❝Dê o seu melhor todos os dias, mesmo que isso aparente não ter retorno nenhum.❞"
-                            autor="Alguém disse"
-                            url="/img/home-painel3.png"
-                            grid_area="foto-3"
-                        />
-                        <Painel 
-                            frase="❝Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam.❞"
-                            autor="Thomas Edison"
-                            url="/img/home-painel4.png"
-                            grid_area="foto-4"
-                        />
-                        <Painel 
-                            frase="❝A melhor maneira de prever o futuro é criá-lo.❞"
-                            autor="Peter Drucker"
-                            url="/img/home-painel5.png"
-                            grid_area="foto-5"
-                        />
+
+                        {painel.map(item => {
+                            return (
+                                <Painel
+                                    key={item.grid_area}
+                                    frase={item.frase}
+                                    autor={item.autor}
+                                    url={item.url}
+                                    grid_area={item.grid_area}
+                                />
+                            )
+                        })}
+                        
                     </div>
+
                     <p>Conheça mais sobre essas e outras histórias incríveis</p>
                     <Button text="Inspire-se!" />
             </FlexContainer>

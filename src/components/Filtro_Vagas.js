@@ -30,14 +30,13 @@ function Filtro() {
                 <input id={css.localizacao} type="text" placeholder="Filtrar por localização" />
             </div>
                
-                
             <button id={css.search}>
                 <img id={css.lupa} src={lupa} alt="Ícone lupa" />
                 <span>Pesquisar</span>
             </button>
         </div>
     </section>
-    )
+)
 }
 
 export default Filtro

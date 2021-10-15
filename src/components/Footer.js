@@ -8,7 +8,7 @@ import youtube from '../assets/img/youtube.svg'
 function Footer() {
     return(
         <footer>
-            <section className={css.info}>
+            <div className={css.info}>
                 <img className={css.logo} src={logo} alt="Logo da overLoop" />
                 <div className={css.contato}>
                     <h3>Contato</h3>
@@ -25,7 +25,7 @@ function Footer() {
                         <li><a href="#"><img src={youtube} alt="Icon Youtube" /></a></li>
                     </ul>
                 </div>
-            </section>
+            </div>
 
             <div className={css.copy}>
                 <p>Copyright - Todos os direitos reservados</p>

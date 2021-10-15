@@ -7,7 +7,7 @@ function Tutoriais() {
         <>
             <Header fundo="transparente" />
 
-            <Banner title="Tutoriais" url="/img/tutoriais-banner.png" />
+            <Banner subtitle="Tutoriais" url="/img/tutoriais-banner.png" pharase="Conteúdos de qualidade e gratuitos para todes aqueles que buscam ingressar e evoluir no mundo tech."/>
 
             <Footer />
         </>

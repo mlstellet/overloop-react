@@ -1,3 +1,4 @@
+import Banner from '../components/Banner'
 import CardFounders from '../components/CardFounders'
 
 const founders = [
@@ -49,7 +50,10 @@ const founders = [
 
 function Inspiracoes() {
     return (
-        founders.map((founder) => (
+      <>
+        <Banner subtitle="Inspirações" url="/img/inspiracoes-banner.png" pharase="Conheça um pouco sobre a história dessas pessoas incríveis que fizeram e fazem carreira no mundo da computação."/>
+
+        {founders.map((founder) => (
             <CardFounders
               key={founder.name}
               name={founder.name}
@@ -57,7 +61,8 @@ function Inspiracoes() {
               avatar={founder.avatar}
               social_icons={founder.social_icons}
             />
-        ))
+        ))}
+      </>
     )
 }
 

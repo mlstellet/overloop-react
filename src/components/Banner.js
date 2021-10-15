@@ -11,10 +11,16 @@ Banner.propTypes = {
 function Banner(props) {
     return (
         <section className={css.intro} style={{backgroundImage: `url(${props.url}), linear-gradient(#F05454, #eb01a5)`}}>
-            {/* se title existe nao existe h2 nem p, se h2 e p existe nao existe h1 */}
-            <h1>{props.title}</h1>
-            <h2>{props.subtitle}</h2>
-            <p>{props.pharase}</p>
+            {/* RENDERIZACAO CONDICIONAL */}
+            {props.title && !props.subtitle && 
+                (<h1>{props.title}</h1>)  
+            }
+            {!props.title && props.subtitle && props.pharase &&
+                <>
+                    <h2>{props.subtitle}</h2>
+                    <p>{props.pharase}</p>
+                </>
+            }
         </section>
     )
 }

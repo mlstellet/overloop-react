@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import css from '../assets/css/header.module.css'
 import logo from '../assets/img/overLoop-logo-white.png'
 
@@ -8,10 +9,10 @@ function Header({fundo}) {
         <a href="index.html"><img className={css.logo} src={logo} alt="Logo da overLoop" /></a>
         <nav>
             <ul>
-                <li><a href="/">home</a></li>
-                <li><a href="vagas.html">vagas</a></li>
-                <li><a href="tutoriais.html">tutoriais</a></li>
-                <li><a href="inspiracao.html">inspirações</a></li>
+                <li><Link to="/">home</Link></li>
+                <li><Link to="/vagas">vagas</Link></li>
+                <li><Link to="/tutoriais">tutoriais</Link></li>
+                <li><Link to="/inspiracoes">inspirações</Link></li>
             </ul>
         </nav>
     </header>

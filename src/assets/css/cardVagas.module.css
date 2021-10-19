@@ -33,9 +33,11 @@ section h2.tipo{
 
 section p.descricao{ 
     margin-top: 0;
+    margin-bottom: 15px;
     padding: 12px 0;
     color: #AAA9A9;
 }
+
 
 section.content .text .location{ 
     padding: 12px 0;

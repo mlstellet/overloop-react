@@ -20,7 +20,7 @@ const Li = styled.li`
 const Input = styled.input`
     display: none; /* nenhuma amostragem visual do elemento */
 
-    &:checked ~ .img_tutorial {
+    &:checked ~ div {
         opacity: 1;
         visibility: visible;
         z-index: 10;
@@ -48,7 +48,6 @@ const Img = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
-    /* height: 100%;  ocupar toda altura do container */
     height: 360px;
     width: 100%;
     vertical-align: top; /* img alinhada verticalmente em relação ao topo */
@@ -57,19 +56,21 @@ const Img = styled.div`
     visibility: hidden;
 `
 
-function handleChange(e) {
-    this.props.onChange(e.target.checked);
-}
+// function handleClick(e) {
+//     // e.target.setAttribute("checked", true)
+//     e.target.checked = checked
+// }
 
-function Slide({ htmlFor, url, defaultChecked }) {
+function Slide({ htmlFor, url, checked }) {
     // checked deve ser apenas para o primeiro componente criado
+    console.log(checked)
     return (
         <Li>
-            {/* <input type="checkbox"  */}
-                    {/* name={this.props.name}  */}
-                    {/* defaultChecked={this.props.defaultChecked}  */}
-                    {/* onChange={ this.handleChange } /> */}
-            <Input type="radio" id={htmlFor} name="slide" defaultChecked />
+            {checked ? (
+                <Input type="radio" id={htmlFor} name="slide" checked /> 
+            ) : (
+                <Input type="radio" id={htmlFor} name="slide" /> 
+            )}
             <Label htmlFor={htmlFor}></Label>
             <Img style={{backgroundImage: `url(${url})`}}></Img>
         </Li>

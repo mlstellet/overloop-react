@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    max-width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container li {
+    padding: 2px;
+    max-width: 100%;
+}
+
+.documentacao {
+    padding: 80px;
+    max-width: 100%;
+}
+
+.documentacao .fontes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 680px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.documentacao .container h2 {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+@media (max-width: 899px) {
+    .container {
+        margin: 0 auto;
+        padding-bottom: 0;
+        gap: 0;
+    }
+
+    .documentacao .container h2 {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+} 

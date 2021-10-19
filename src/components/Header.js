@@ -6,7 +6,7 @@ function Header({fundo}) {
 
     return (
         <header className={fundo === "transparente" ? css.transparente : css.solid}>
-        <a href="index.html"><img className={css.logo} src={logo} alt="Logo da overLoop" /></a>
+        <Link to="/"><img className={css.logo} src={logo} alt="Logo da overLoop" /></Link>
         <nav>
             <ul>
                 <li><Link to="/">home</Link></li>

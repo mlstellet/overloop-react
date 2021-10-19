@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const But = styled.button`
+    display: block;
     border: none;
     text-decoration: none;
 

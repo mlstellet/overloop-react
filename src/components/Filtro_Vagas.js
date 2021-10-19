@@ -6,7 +6,7 @@ import localizacao from '../assets/img/vagas-localizacao-icon.svg'
 function Filtro() {
     return(
     <section className={css.top}>
-        <h1>Vagas</h1>
+        <h1 align="center" >Vagas</h1>
         <hr />
         <p>Encontre seu emprego dos sonhos e dê match!</p>
         <div className={css.formulario}>

@@ -93,7 +93,7 @@ function Home() {
             <FlexContainer secao="tutoriais">
                 <H2 h2="Tutoriais" />
 
-                    <Slider />
+                    {/* <Slider /> */}
 
                     <P>
                         Aprenda com os melhores e o melhor: <strong>de graça!</strong>

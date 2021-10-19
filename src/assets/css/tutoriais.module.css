@@ -14,13 +14,19 @@ section.tutoriais {
 section.tutoriais h2 {
     text-align: center;
     margin: 30px auto;
-    padding: 30px 0 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 30px 25px 10px;
     padding-bottom: 10px;
-    border-bottom: 3px solid #222831;
-    display: inline-block;
     max-width: 100%;
+
+    display: inline-block;
+
+    font-family: 'Antic Slab', serif;
+    text-transform: none;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+
+    border-bottom: none;
+    padding-bottom: 10px;
 }
 
 

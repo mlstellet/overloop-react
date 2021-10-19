@@ -1,12 +1,49 @@
-import css from "../assets/css/flexContainer.module.css"
+import styled from "styled-components"
+
+const Section = styled.section`
+    &:not(.info) {
+        padding: 100px 0 90px 0;
+    }
+
+    &.sobre,
+    &.vagas,
+    &.mulheres,
+    &.tutoriais {
+        background: rgba(240, 84, 84, 0.1); 
+    }
+
+    &.code-break {
+        width: 100%;
+        height: 300px;
+
+        background-image: url("/img/home-code-break.png");
+    }
+
+    &.pessoas .container,
+    &.mulheres .container,
+    &.tutoriais .container {
+        flex-direction: column;
+    }
+`
+
+const Container = styled.div`
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 4rem;
+`
 
 function FlexContainer(props) {
     return (
-        <section className={css[props.secao]}>
-            <div className={css.container}>
+        <Section className={[props.secao]}>
+            <Container className="container">
                 {props.children}
-            </div>
-        </section>
+            </Container>
+        </Section>
     )
 }
 

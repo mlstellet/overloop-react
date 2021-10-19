@@ -1,3 +1,5 @@
+import react from 'react'
+
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Banner from "../components/Banner"

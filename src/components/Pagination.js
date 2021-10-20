@@ -14,18 +14,21 @@ const Ul = styled.ul`
 `
 
 const Itens = styled.li`
+    position: relative;
     border: none;
     background-color: #F05454;
-    padding: 10px 15px;
+    padding: 20px 20px;
     
     display: inline-block;
     margin: 6px 10px;
     border-radius: 50%;
-    cursor: pointer;
     max-width: 100%;
 `
 
 const A = styled.a`
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -35,7 +38,19 @@ const A = styled.a`
     text-align: center;
     text-decoration: none;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     cursor: pointer;
+
+    .color {
+        background-color: #222831;
+    }
+
+    &:hover {
+        background-color: #222831;
+    }
 `
 
 export default function Pagination({ postPerPage, totalPosts, paginate }) {
@@ -45,8 +60,6 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
         pageNumbers.push(i);
     }
 
-    // listObjs.push(Object.assign({}, pageNumbers));
-
     console.log(pageNumbers)
     console.log(postPerPage, totalPosts)
     return (
@@ -54,6 +67,15 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
             <Ul>
                 {Array.apply(0, Array(pageNumbers.length)).map((x, i) => {
                     console.log("X:" + x,"I:" + i)
+                    if (i === 0) {
+                        return (
+                            <Itens key={i}>
+                                <A href="#" onClick={() => paginate(i+1)} className="color">
+                                    {i+1}
+                                </A>
+                            </Itens>
+                        )  
+                    }
                     return (
                         <Itens key={i}>
                             <A href="#" onClick={() => paginate(i+1)}>
@@ -62,14 +84,6 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
                         </Itens>
                     )
                 })}
-                {/* {pageNumbers.forEach((number) => {
-                    {console.log(number)}
-                    <Itens key={number}>
-                        <a href="#" onClick={() => paginate(number)}>
-                            {number}
-                        </a>
-                    </Itens>
-                })} */}
             </Ul>
         </Nav>
     )

@@ -23,6 +23,10 @@ const Itens = styled.li`
     margin: 6px 10px;
     border-radius: 50%;
     max-width: 100%;
+
+    .color {
+        background-color: #222831;
+    }
 `
 
 const A = styled.a`
@@ -38,20 +42,27 @@ const A = styled.a`
     text-align: center;
     text-decoration: none;
 
+    background-color: #F05454;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     cursor: pointer;
 
-    .color {
+    /* &:hover {
         background-color: #222831;
-    }
+    } */
 
-    &:hover {
+    &:focus {
+        outline: none;
         background-color: #222831;
     }
 `
+
+function marcaButton(e) {
+    e.target.classList.add('color')
+}
 
 export default function Pagination({ postPerPage, totalPosts, paginate }) {
     const pageNumbers = [];
@@ -60,8 +71,6 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
         pageNumbers.push(i);
     }
 
-    console.log(pageNumbers)
-    console.log(postPerPage, totalPosts)
     return (
         <Nav>
             <Ul>
@@ -70,7 +79,7 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
                     if (i === 0) {
                         return (
                             <Itens key={i}>
-                                <A href="#" onClick={() => paginate(i+1)} className="color">
+                                <A href="#" onClick={(e) => {paginate(i+1)}} autofocus="true">
                                     {i+1}
                                 </A>
                             </Itens>
@@ -78,7 +87,7 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
                     }
                     return (
                         <Itens key={i}>
-                            <A href="#" onClick={() => paginate(i+1)}>
+                            <A href="#" onClick={(e) => {paginate(i+1)}}>
                                 {i+1}
                             </A>
                         </Itens>

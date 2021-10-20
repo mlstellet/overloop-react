@@ -1,7 +1,8 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Filtro from "../components/Filtro_Vagas"
-import Card_Vagas from "../components/Card_Vagas"
+// import Card_Vagas from "../components/Card_Vagas"
+import QuadroVagas from "../components/QuadroVagas"
 
 
 function Vagas() {
@@ -9,7 +10,7 @@ function Vagas() {
         <>
             <Header />
             <Filtro />
-            <Card_Vagas />
+            <QuadroVagas />
             <Footer />
         </>
     )

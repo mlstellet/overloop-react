@@ -1,11 +1,11 @@
-import axios from "axios";
+// import axios from "axios";
 
-const api = axios.create({
-    baseURL: "https://jooble.org/",
+// const api = axios.create({
+//     baseURL: "https://jooble.org/",
     
-});
+// });
 
-export default api;
+// export default api;
 
 
 

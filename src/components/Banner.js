@@ -21,7 +21,7 @@ const Container = styled.section`
     background-size: cover;
 `
 
-const SubTitle = styled.h1`
+const SubTitle = styled.h2`
     display: inline-block;
 
     font-family: 'Antic Slab', serif;
@@ -31,6 +31,7 @@ const SubTitle = styled.h1`
 
     border-bottom: 3px solid #fff;
     padding-bottom: 10px;
+    padding-top: 500px;
 `
 
 const Title = styled.h1`
@@ -56,7 +57,7 @@ const Paragraph = styled.p`
 
 function Banner(props) {
     return (
-        <Container style={{backgroundImage: `linear-gradient(rgba(240, 84, 84, 0.2), rgba(235, 1, 165, 0.2)), url(${props.url})`}}>
+        <Container style={{backgroundImage: `url(${props.url})`}}>
             {/* RENDERIZACAO CONDICIONAL */}
             {props.title && !props.subtitle && 
                 (<Title>{props.title}</Title>)  

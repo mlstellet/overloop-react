@@ -9,10 +9,10 @@ function CardTutoriais() {
                 {
                     data.map(item => {
                         return (
-                            <article>
+                            <article className={css.linguagem}>
                                 <div className={css.container}>
                                     <div className={css.logo}>
-                                        <img src={item.logo} alt="" />
+                                        <img src={item.logo} alt={"Logo da linguagem "+item.nome} />
                                     </div>
                                     <div className={css.texto}>
                                         <h3 key={item.chave}>{item.nome}</h3>

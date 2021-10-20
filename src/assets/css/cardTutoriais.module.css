@@ -1,4 +1,4 @@
-  article {
+.linguagem {
     background-color: #fff;
     margin: 60px 0;
     max-width: 100%;
@@ -6,7 +6,7 @@
 }
 
 
-  article h3 {
+.linguagem h3 {
     font-family: 'Antic Slab', serif;
     max-width: 100%;
     padding-left: 25px;
@@ -17,18 +17,18 @@
     display: inline-block;
 }
 
-  article p {
+.linguagem p {
     text-align: justify;
     padding: 20px 0 40px 0;
     max-width: 100%;
 }
 
-  article img {
+.linguagem img {
     width: 200px;
     max-width: 100%;
 }
 
-  article a {
+.linguagem a {
     text-decoration: underline;
     font-family: 'Urbanist', sans-serif;
     color: #F05454;
@@ -36,14 +36,14 @@
 
 }
 
-  article li {
+.linguagem li {
     padding: 2px;
     max-width: 100%;
     list-style: circle;
     color: #F05454;
 }
 
-  article .texto {
+.linguagem .texto {
     width: 500px;
     max-width: 100%;
     font-family: 'Urbanist', sans-serif;

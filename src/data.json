@@ -17,7 +17,7 @@
         "descricao": "Kotlin é uma linguagem de programação desenvolvida pela JetBrains e executada na Márquina Virtual do Java. É uma linguagem bastante tipada, e utilizada para o desenvolvimento de aplicativos Android.",
         "nomeLink1": "Documentação da Linguagem",
         "link1": "https://kotlinlang.org/docs/home.html",
-        "nomeLink2": "Repositório no GutHub",
+        "nomeLink2": "Repositório no GitHub",
         "link2": "https://github.com/JetBrains/kotlin"
     }, 
     {
@@ -59,5 +59,65 @@
         "link1": "https://www.php.net/manual/pt_BR/",
         "nomeLink2": "Curso de PHP",
         "link2": "https://www.youtube.com/watch?v=F7KzJ7e6EAc&list=PLHz_AreHm4dm4beCCCmW4xwpmLf6EHY9k"
+    },
+    {
+        "chave": 7,
+        "logo": "../img/tutoriais-go.png",
+        "nome": "Go",
+        "descricao": "Go é uma linguagem de programação criada pela Google e lançada em código livre em novembro de 2009. É uma linguagem compilada e focada em produtividade e programação concorrente, baseada em trabalhos feitos no sistema operacional chamado 'Inferno'.",
+        "nomeLink1": "Documentação da Linguagem",
+        "link1": "https://golang.org/doc/",
+        "nomeLink2": "Curso de Go",
+        "link2": "https://www.youtube.com/watch?v=WiGU_ZB-u0w&list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg"
+    },
+    {
+        "chave": 8,
+        "logo": "../img/tutoriais-elixir.png",
+        "nome": "Elixir",
+        "descricao": "Elixir é uma linguagem de programação funcional, concorrente, de propósito geral que executa na máquina virtual Erlang (BEAM). Elixir compila em cima de Erlang para fornecer aplicações distribuídas, em tempo real suave, tolerante a falhas, non-stop.",
+        "nomeLink1": "Documentação da Linguagem",
+        "link1": "https://elixir-lang.org/docs.html",
+        "nomeLink2": "Repositório no GitHub",
+        "link2": "https://github.com/elixir-lang/elixir"
+    },
+    {
+        "chave": 9,
+        "logo": "../img/tutoriais-lua.png",
+        "nome": "Lua",
+        "descricao": "Lua é uma linguagem de programação eficiente e leve, projetada para estender aplicações. Ela permite programação procedural, programação orientada a objetos, programação funcional, programação orientada a dados e descrição de dados.",
+        "nomeLink1": "Documentação da Linguagem",
+        "link1": "https://www.lua.org/docs.html",
+        "nomeLink2": "Aprenda o básico em 1 hora",
+        "link2": "https://www.youtube.com/watch?v=S4eNl1rA1Ns"
+    },
+    {
+        "chave": 10,
+        "logo": "../img/tutoriais-julia.svg",
+        "nome": "Julia",
+        "descricao": "Julia é uma linguagem de programação dinâmica de alto nível, projetada para atender os requisitos da computação de alto desempenho numérico e científico, sendo também eficaz para a programação de propósito geral.",
+        "nomeLink1": "Documentação da Linguagem",
+        "link1": "https://docs.julialang.org/en/v1/",
+        "nomeLink2": "Uma gentil introdução a Julia",
+        "link2": "https://www.youtube.com/watch?v=4igzy3bGVkQ"
+    },
+    {
+        "chave": 11,
+        "logo": "../img/tutoriais-csharp.png",
+        "nome": "C#",
+        "descricao": "C# é uma linguagem de programação orientada a objetos, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET.",
+        "nomeLink1": "Documentação da Linguagem",
+        "link1": "https://docs.microsoft.com/pt-br/dotnet/csharp/",
+        "nomeLink2": "Tutorial para iniciantes (inglês)",
+        "link2": "https://www.youtube.com/watch?v=GhQdlIFylQ8"
+    },
+    {
+        "chave": 12,
+        "logo": "../img/tutoriais-java.png",
+        "nome": "Java",
+        "descricao": "Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90. Diferente das linguagens de programação modernas, que são compiladas para código nativo, a linguagem Java é compilada para um bytecode que é interpretado por uma máquina virtual (Java Virtual Machine, mais conhecida pela sua abreviação JVM).",
+        "nomeLink1": "Documentação da Linguagem",
+        "link1": "https://docs.oracle.com/en/java/",
+        "nomeLink2": "Curso de Java",
+        "link2": "https://www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR"
     }
 ]

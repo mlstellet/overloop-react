@@ -1,14 +1,26 @@
 import css from '../assets/css/cardVagas.module.css'
+import styled from 'styled-components'
+
+const H2 = styled.h2`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-transform: uppercase;
+    border: 0;
+
+    font-size: 16px;
+`
 
 export default function Card_Vagas({ vagas, loading }) {
     if (loading) {
-        return <h2>Carregando...</h2>
+        return <H2>Carregando . . .</H2>
     }
 
     return (
         <>
             {vagas.map(single=>(
-                <section className={css.content}>
+                // <section className={css.content}>
                     <article className={css.job}>
                         <div className={css.job_info}>
                             <div className={css.text}>
@@ -18,7 +30,7 @@ export default function Card_Vagas({ vagas, loading }) {
                             </div>
                         </div>
                     </article>
-                </section>
+                // </section>
             ))}
         </>
     )

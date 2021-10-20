@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Nav = styled.section`
     display: flex;
     justify-content: center;
-    margin: 50px 0 100px;
+    margin: 100px 0 50px;
 `
 
 const Ul = styled.ul`
@@ -26,10 +26,16 @@ const Itens = styled.li`
 `
 
 const A = styled.a`
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
     color: #fff;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
+
+    cursor: pointer;
 `
 
 export default function Pagination({ postPerPage, totalPosts, paginate }) {
@@ -46,20 +52,13 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
     return (
         <Nav>
             <Ul>
-                {/* for (let number of pageNumbers) {
-                    <Itens>
-                        <a href="#" onClick={() => paginate(number)}>
-                            {number}
-                        </a>
-                    </Itens>
-                } */}
                 {Array.apply(0, Array(pageNumbers.length)).map((x, i) => {
                     console.log("X:" + x,"I:" + i)
                     return (
                         <Itens key={i}>
-                            <a href="#" onClick={() => paginate(i+1)}>
+                            <A href="#" onClick={() => paginate(i+1)}>
                                 {i+1}
-                            </a>
+                            </A>
                         </Itens>
                     )
                 })}

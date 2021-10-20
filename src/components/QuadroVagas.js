@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
 import axios from "axios";
 import Card_Vagas from "./Card_Vagas";
 import Pagination from "./Pagination";
+import VagasPainel from "./VagasPainel";
 
 // pq axios.create? e não axios.get?
 const api = axios.create({
@@ -32,7 +32,7 @@ export default function QuadroVagas() {
           });
     }, []);
     console.log(vagas)
-    
+
     // Pegando o post atual
     const indexUltimoPost = atualPage * postPerPage;
     const indexPrimeiroPost = indexUltimoPost - postPerPage;
@@ -43,7 +43,9 @@ export default function QuadroVagas() {
 
     return (
         <>
-            <Card_Vagas vagas={vagasAtuais} loading={loading}/>
+            <VagasPainel>
+                <Card_Vagas vagas={vagasAtuais} loading={loading}/>
+            </VagasPainel>
             <Pagination postPerPage={postPerPage} totalPosts={vagas.length} paginate={paginate} />  
         </>
     )

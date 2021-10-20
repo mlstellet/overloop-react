@@ -1,14 +1,4 @@
-section.content {
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-section.content .job_info {
+.job_info {
     width: 340px;
     height: 250px;
     margin: 30px 30px 50px;
@@ -19,19 +9,19 @@ section.content .job_info {
     border-radius: 10px;
 }
 
-section.content .text {
+.text {
     padding: 30px 20px;
     position: relative;
 }
 
 
-section h2.tipo{  
+h2.tipo{  
     font-family: 'Antic Slab', serif;
     font-size: 1.5rem;
     padding-bottom: 0;
 }
 
-section p.descricao{ 
+p.descricao{ 
     margin-top: 0;
     margin-bottom: 15px;
     padding: 12px 0;
@@ -39,7 +29,7 @@ section p.descricao{
 }
 
 
-section.content .text .location{ 
+.text .location{ 
     padding: 12px 0;
     color: #F05454;
     font-weight: 600;

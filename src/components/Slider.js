@@ -4,15 +4,18 @@ import styled from "styled-components"
 const slides = [
     {
         "htmlFor": "slide1",
-        "url": "/img/home-slider1.png"
+        "url": "/img/home-slider1.png",
+        "checked": true
     },
     {
         "htmlFor": "slide2",
-        "url": "/img/home-slider2.jpg"
+        "url": "/img/home-slider2.jpg",
+        "checked": false
     },
     {
         "htmlFor": "slide3",
-        "url": "/img/home-slider3.jpg"
+        "url": "/img/home-slider3.jpg",
+        "checked": false
     }       
 ]
 
@@ -28,25 +31,15 @@ const Container = styled.ul`
 function Slider() {
     return (
         <Container>
-            {slides.map((slide, count) => {
-                if (count === 0) {
-                    return (
-                        <Slide 
-                            key={slide.htmlFor}
-                            htmlFor={slide.htmlFor}
-                            url={slide.url}
-                            defaultChecked={this.props.defaultChecked}
-                        />
-                    )
-                } else {
-                    return (
-                        <Slide 
-                            key={slide.htmlFor}
-                            htmlFor={slide.htmlFor}
-                            url={slide.url}
-                        />
-                    )
-                }
+            {slides.map((slide) => {
+                return (
+                    <Slide 
+                        key={slide.htmlFor}
+                        htmlFor={slide.htmlFor}
+                        url={slide.url}
+                        checked={slide.checked}
+                    />
+                )
             })}
         </Container>
     )

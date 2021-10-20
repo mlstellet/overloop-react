@@ -30,6 +30,10 @@ LS.NavFixedItem_LINK = styled(Link)`
     &:hover {
         background: #F05454;
     }
+
+    &:active {
+        transform: scale(0.96);
+    }
 `
 
 Button.propTypes = {

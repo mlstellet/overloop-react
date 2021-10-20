@@ -1,3 +1,53 @@
+  article {
+    background-color: #fff;
+    margin: 60px 0;
+    max-width: 100%;
+    padding: 60px 0;
+}
+
+
+  article h3 {
+    font-family: 'Antic Slab', serif;
+    max-width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    border-bottom: 3px solid #222831;
+    display: inline-block;
+}
+
+  article p {
+    text-align: justify;
+    padding: 20px 0 40px 0;
+    max-width: 100%;
+}
+
+  article img {
+    width: 200px;
+    max-width: 100%;
+}
+
+  article a {
+    text-decoration: underline;
+    font-family: 'Urbanist', sans-serif;
+    color: #F05454;
+    max-width: 100%;
+
+}
+
+  article li {
+    padding: 2px;
+    max-width: 100%;
+    list-style: circle;
+    color: #F05454;
+}
+
+  article .texto {
+    width: 500px;
+    max-width: 100%;
+    font-family: 'Urbanist', sans-serif;
+}
 
 .container {
     display: flex;
@@ -39,21 +89,21 @@
         text-align: center;
         margin-bottom: 45px;
     }
-    section.tutoriais article .texto {
+      article .texto {
         width: 500px;
     }
-    section.tutoriais h2 {
+      h2 {
         margin-bottom: 0;
     }
 
 } 
 @media (max-width: 743px) {
-    section.tutoriais article img {
+      article img {
         margin-top: 50px;
     }
 
-    section.tutoriais article,
-    section.tutoriais article p {
+      article,
+      article p {
         text-align: center;
     }
 }

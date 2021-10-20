@@ -1,31 +1,35 @@
+import { array } from "prop-types";
 import css from "../assets/css/cardTutoriais.module.css";
+import data from '../data.json'
 
 function CardTutoriais() {
+    let lista = [1, 2, 3, 4]
     return (
-        <article>
-        <div className={css.container}>
-        <div className={css.logo}>
-            <a href= "https://kotlinlang.org/" target="blank"><img src="../img/tutoriais-kotlin.svg" alt="Logo Kotlin" /></a>
+        <div> 
+                {
+                    data.map(item => {
+                        return (
+                            <article>
+                                <div className={css.container}>
+                                    <div className={css.logo}>
+                                        <img src={item.logo} alt="" />
+                                    </div>
+                                    <div className={css.texto}>
+                                        <h3 key={item.chave}>{item.nome}</h3>
+                                        <p key={item.chave}>{item.descricao}</p>
+                                        <ul>
+                                            <li><a href={item.link1} target="_blank">{item.nomeLink1}</a></li>
+                                            <li><a href={item.link2} target="_blank">{item.nomeLink2}</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </article> 
+                        );
+                        
+                    })
+                }
         </div>
-        <div className={css.texto}>
-            <h3>Kotlin</h3>
-            <p>Kotlin é uma linguagem de programação desenvolvida pela JetBrains e executada na Márquina Virtual do Java.
-                É uma linguagem bastante tipada, e utilizada para o desenvolvimento de aplicativos Android.
-                <ul>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                </ul>
-            </p>
-        </div>
-        </div>
-    </article>
     );
 }
 

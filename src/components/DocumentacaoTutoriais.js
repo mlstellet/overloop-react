@@ -1,6 +1,7 @@
 // import stack from '../assets/img/tutoriais-stacko.svg'
 import css from '../assets/css/cardDocumentacao.module.css'
 
+
 const links = [
     {
         "chave": 1,
@@ -40,7 +41,7 @@ const links = [
     },
 ]
 
-{/* <Element key={identificador} prop1={gdbhbgdhb}/> */ }
+
 
 function DocumentacaoTutoriais() {
     return (

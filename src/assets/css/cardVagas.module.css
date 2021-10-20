@@ -1,6 +1,6 @@
 .job_info {
     width: 340px;
-    height: 250px;
+    height: 300px;
     margin: 30px 30px 50px;
 
     background: #FFFFFF;
@@ -14,8 +14,9 @@
     position: relative;
 }
 
-
 h2.tipo{  
+    margin: 0;
+    padding-top: 0;
     font-family: 'Antic Slab', serif;
     font-size: 1.5rem;
     padding-bottom: 0;

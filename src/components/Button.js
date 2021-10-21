@@ -34,13 +34,6 @@ LS.NavFixedItem_LINK = styled(Link)`
     &:active {
         transform: scale(0.96);
     }
-
-    @media(max-width: 830px) {
-        top: 0;
-        left: 0;
-        transform: translateX(25%);
-        background-color: #F05454;
-    }
 `
 
 Button.propTypes = {

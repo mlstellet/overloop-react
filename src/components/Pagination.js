@@ -50,25 +50,33 @@ const A = styled.a`
 
     cursor: pointer;
 
-    /* &:hover {
-        background-color: #222831;
-    } */
-
     &:focus {
         outline: none;
         background-color: #222831;
     }
 `
 
-function marcaButton(e) {
-    e.target.classList.add('color')
-}
 
 export default function Pagination({ postPerPage, totalPosts, paginate }) {
-    const pageNumbers = [];
+    const pageNumbers = []
+    let buttons = undefined
 
     for (let i = 1; i <= Math.ceil(totalPosts / postPerPage); i++) {
         pageNumbers.push(i);
+    }
+
+    // após renderizar a tela
+    React.useEffect(() => {
+        buttons = document.querySelectorAll('.butPagina')
+        console.log(buttons)
+    })
+
+    const clicado = (e, i) => {
+        paginate(i+1)
+        buttons.forEach(button => {
+            button.classList.remove('escolhido')
+        })
+        e.target.classList.add('escolhido')
     }
 
     return (
@@ -79,7 +87,7 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
                     if (i === 0) {
                         return (
                             <Itens key={i}>
-                                <A href="#" onClick={(e) => {paginate(i+1)}} autofocus="true">
+                                <A href="#" onClick={(e) => {clicado(e, i)}} autofocus="true" className="butPagina escolhido">
                                     {i+1}
                                 </A>
                             </Itens>
@@ -87,7 +95,7 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
                     }
                     return (
                         <Itens key={i}>
-                            <A href="#" onClick={(e) => {paginate(i+1)}}>
+                            <A href="#" onClick={(e) => {clicado(e, i)}} className="butPagina">
                                 {i+1}
                             </A>
                         </Itens>

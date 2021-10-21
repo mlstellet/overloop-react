@@ -25,6 +25,11 @@ const TituloArtigo = styled.h3`
     padding-bottom: 5px;
     font-family: 'Antic Slab', serif;
     font-size: 1.5rem;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 260px;
+    overflow: hidden;
     
     @media(max-width:1070px) {
         h3 {
@@ -63,6 +68,11 @@ const P = styled.p`
     margin-bottom: 15px;
     padding: 12px 0;
     color: #AAA9A9;
+
+    text-overflow: ellipsis;
+    white-space: wrap;
+    max-width: 600px;
+    overflow: hidden;
 `
 
 const Location = styled.span`

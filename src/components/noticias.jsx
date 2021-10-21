@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import css from "../assets/css/inspiracoes.module.css";
 
 const api_key = "b600c122-75d0-4c03-bcd2-684c5f16eb3e";
 
@@ -12,11 +13,13 @@ function getNews(newsList) {
     const { webTitle, webUrl, webPublicationDate, fields } = noticias;
     news.push(
       <>
-        <div class="image">
-          <img src={fields.thumbnail} alt="noticia1" />
-        </div>
-        <div class="info">
-          <div class="text">
+      
+      <div className={css.container}>
+        <div className={css.image}>
+            <img src={fields.thumbnail} alt="noticia1" />
+            </div>
+        <div className={css.info}>
+          <div className={css.text}>
             <h3>{webTitle}</h3>
             <small>
               {webPublicationDate.slice(0, 10).split("-").reverse().join("-")}
@@ -31,7 +34,8 @@ function getNews(newsList) {
             </a>
           </p>
         </div>
-      </>
+      </div>
+    </>
     );
   });
 

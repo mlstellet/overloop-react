@@ -1,5 +1,6 @@
 // import stack from '../assets/img/tutoriais-stacko.svg'
 import css from '../assets/css/cardDocumentacao.module.css'
+import styled from 'styled-components';
 
 
 const links = [
@@ -43,11 +44,12 @@ const links = [
 
 
 
+
 function DocumentacaoTutoriais() {
     return (
         <section className={css.documentacao}>
             <div className={css.container}>
-                <h2>Em caso de dúvida, não deixe de recorrer a...</h2>
+                <h3 className={css.textoDocumentacao}>Em caso de dúvida, não deixe de recorrer a...</h3>
                 <div className={css.fontes}> 
                 {
                     links.map(item => {

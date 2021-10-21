@@ -35,6 +35,12 @@ const Container = styled.div`
     justify-content: space-between;
 
     gap: 4rem;
+
+    @media(max-width: 620px) {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 function FlexContainer(props) {

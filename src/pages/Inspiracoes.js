@@ -24,8 +24,8 @@ const founders = [
     social_icons: {
       face: "",
       twitter: "",
-      linkedin: "",
-      insta: "",
+      linkedin: "https://www.linkedin.com/in/amanda-maria/",
+      insta: "https://www.instagram.com/amanda_yosh/",
     },
   },
   {

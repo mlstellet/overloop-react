@@ -94,11 +94,6 @@ const Texto = styled.div`
     }
 `
 
-
-
-
-
-
 // .container h2 {
 //     font-family: 'Urbanist', sans-serif;
 //     font-weight: 400;
@@ -130,7 +125,7 @@ function CardTutoriais({data}) {
                             </div>
                             <Texto>
                                 <H3 key={item.chave}>{item.nome}</H3>
-                                <P key={item.chave}>{item.descricao}</P>
+                                <P>{item.descricao}</P>
                                 <ul>
                                     <Li>
                                         <A href={item.link1} target="_blank">{item.nomeLink1}</A>

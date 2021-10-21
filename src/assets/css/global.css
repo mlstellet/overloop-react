@@ -38,3 +38,7 @@ body {
     width: 199px;
     height: 39px;
 } 
+
+.escolhido {
+    background-color: #222831 !important;
+}

@@ -3,7 +3,9 @@ import CardFounders from "../components/CardFounders";
 import css from "../assets/css/inspiracoes.module.css";
 import Button from "../components/Button";
 import Noticias from "../components/noticias";
-
+import logo from "../assets/img/inspiracoes-icon-overLoop-logopreto.png";
+import Footer from "../components/Footer";
+import Carrossel from "../components/InspCarousel";
 
 const founders = [
   {
@@ -53,6 +55,30 @@ const founders = [
   },
 ];
 
+const profissionals = [
+  {
+    area: "Data Science",
+    name: "Maria Luiza",
+    role: "Estagiária de Engenharia",
+    avatar: "/img/inspiracoes-fotokhiara.png",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+  },
+  {
+    area: "Data Science",
+    name: "Maria Luiza",
+    role: "Estagiária de Engenharia",
+    avatar: "/img/inspiracoes-fotoamanda.png",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+  },
+  {
+    area: "Data Science",
+    name: "Maria Luiza",
+    role: "Estagiária de Engenharia",
+    avatar: "/img/inspiracoes-fotomaria.png",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+  },
+];
+
 function Inspiracoes() {
   return (
     <>
@@ -62,15 +88,32 @@ function Inspiracoes() {
         pharase="Conheça um pouco sobre a história dessas pessoas incríveis que fizeram e fazem carreira no mundo da computação."
       />
       
-      
-      <Noticias/>
+     {/* <div>
+      {profissionals.map((prof) => (
+          <Carrossel
+            key= {prof.name}
+            area = {prof.area}
+            role={prof.role}
+            avatar={prof.avatar}
+            description={prof.description}
+          />
+      ))}
+      </div> */}
+
+      <Carrossel/>
+
+      <div className={css.noticias}>
+        <h2>Noticias - Últimas Novidades</h2>
+        
+        {/* <Noticias/> */}
+      </div>
       
       <div className={css.fundadoras}>
         <div className={css.container}>
 
           <div className={css.titulo}>
             <h2>MATK - Fundadoras do</h2>
-            <img src="img/inspiracoes-icon-overLoop-logopreto.png" alt="Logo da overLoop"/>
+            <img src={logo} alt="Logo da overLoop"/>
           </div>
 
           <div className={css.galery}>
@@ -100,7 +143,9 @@ function Inspiracoes() {
         <a href="nps.html"><Button text="Buscar"/></a>
         <br/>
       </div>
-      
+
+        
+      <Footer />
     </>
   );
 }

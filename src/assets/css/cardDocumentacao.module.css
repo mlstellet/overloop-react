@@ -35,6 +35,14 @@
     max-width: 100%;
 }
 
+.textoDocumentacao {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    max-width: 100%;
+    font-size: 24px;
+}
+
 @media (max-width: 899px) {
     .container {
         margin: 0 auto;

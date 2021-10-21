@@ -1,0 +1,79 @@
+
+.containerForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+    max-width: 100%;
+    margin-right: 8px;
+}
+.containerForm form {
+    width: 600px;
+    max-width: 100%;
+    padding: 0 20px;
+}
+.containerForm label{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    max-width: 100%;
+    width: 60vw; 
+    padding: 8px 0 0 0;
+    border-radius: 10px;
+}
+
+.containerForm input {
+    border: 0;
+    width: 600px;
+    outline: none;
+    font-size: 14px;
+    min-width: 220px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.containerForm input::placeholder {
+    color: #AAA9A9;
+    font-size: 14px;
+    max-width: 100%;
+}
+
+.avaliacao {
+    margin: 40px 0;
+}
+
+
+.enviar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.botaoenviar {
+    border: none;
+    background: #222831;
+    color: #fff;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 60px 30px 90px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 100%;
+    font-family: 'Urbanist', sans-serif;
+
+} 
+
+.botaoenviar:hover {
+    transition: 0.5s;
+    background: #F05454;
+}
+
+
+
+

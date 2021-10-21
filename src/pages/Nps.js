@@ -5,23 +5,7 @@ import Avaliacao from '../components/Avaliacao';
 import InputNps from "../components/InputNps";
 import TituloNps from '../components/TituloNps';
 import { useState } from 'react';
-
-// fetch('http://localhost:3000/posts', {
-//             method: 'POST',
-//             body: JSON.stringify({
-//                 nome: nomeInputValue,
-//                 email: emailInputValue,
-//                 notaRecomenda: btnListRecomendaValue,
-//                 notaUtil: btnListUtilValue,
-//                 notaFacil: btnListFacilValue
-//             }),
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             }
-//         })
-
-//         form.submit();
-
+import { useHistory } from 'react-router-dom';
 
 
 function Nps() {
@@ -30,6 +14,23 @@ function Nps() {
     const [util, setUtil] = useState(undefined); //undefined, não clicado
     const [facil, setFacil] = useState(undefined);
     const [recomenda, setRecomenda] = useState(undefined);
+    const history = useHistory();
+
+    function sendData() {
+      fetch("http://localhost:5000/posts", {
+        method: "POST",
+        body: JSON.stringify({
+          nome: name,
+          email: email,
+          notaRecomenda: recomenda,
+          notaUtil: util,
+          notaFacil: facil,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    }
 
 
     // VALIDACAO EMAIL E NOME
@@ -68,6 +69,8 @@ function Nps() {
         else {
             let tagp = document.querySelector('#form p');
             tagp.innerHTML='';
+            sendData();
+            history.push("/npsEnviado")
         }
     }
 
@@ -88,11 +91,9 @@ function Nps() {
                         <div className={css.avaliacao}>
                             <Avaliacao util={setUtil} facil={setFacil} recomenda={setRecomenda}/>
                         </div>
-                        
-                        
 
                         <section  className={css.enviar}>
-                            <button type="submit"  className={css.botaoenviar} >Enviar</button> 
+                            <button type="submit"  className={css.botaoenviar}>Enviar</button> 
                         </section>
 
                     </form>

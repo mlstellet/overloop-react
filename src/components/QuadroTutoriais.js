@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import CardTutoriais from "./CardsTutoriais";
 import Pagination from "./Pagination";
 import data from '../data.json'
 
 export default function QuadroTutoriais() {
-    const [loading, setLoading] = useState(false)
     const [atualPage, setAtualPage] = useState(1);
     const [postPerPage] = useState(3);
 

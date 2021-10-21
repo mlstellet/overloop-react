@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Inspiracoes from './pages/Inspiracoes';
 import Vagas from './pages/Vagas';
 import Tutoriais from './pages/Tutoriais';
+import Nps from './pages/Nps';
 
 function Routes() {
     return (
@@ -12,6 +13,7 @@ function Routes() {
                 <Route path="/inspiracoes" component={Inspiracoes}/>
                 <Route path="/vagas" component={Vagas}/>
                 <Route path="/tutoriais" component={Tutoriais}/>
+                <Route path="/nps" component={Nps} />
             </Switch>
         // </BrowserRouter>
     )

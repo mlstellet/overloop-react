@@ -12,7 +12,7 @@ import Button from "../components/Button"
 import H2 from "../components/H2"
 import P from "../components/P"
 import Text from "../components/Text"
-
+import Img from "../components/Imagem"
 
 function Home() {
     return (
@@ -26,15 +26,17 @@ function Home() {
                         O overLoop é um portal de comunicação de tecnologia. Aqui você poderá encontrar diferentes assuntos que envolvam inovação, criatividade, aprendizado e muita, mais muita colaboração!
                     </P>
                 </Text>
-                <img src={sobreFoto} alt="" />
+                {/* <img src={sobreFoto} alt="" /> */}
+                <Img imagem={sobreFoto} classe="foto" />
             </FlexContainer>
 
             <FlexContainer secao="missao-valores">
-                    <img className="icon" src={missaoIcon} alt="" />
+                    {/* <img className="icon" src={missaoIcon} alt="" /> */}
+                    <Img imagem={missaoIcon} classe="icon"/>
                     <Text>
                         <H2 h2="Missão" />
                         <P>
-                            Nosso propósito é garantir o conteúdo de qualidade para todes nossos usuários de tecnologia.
+                            Nosso propósito é garantir o conteúdo de qualidade para todes nossos usuários.
                             <br/>
                             Conteúdo gratuito e de qualidade para todes.
                         </P>
@@ -55,7 +57,8 @@ function Home() {
                     </P>
                     <Button text="Buscar" link="/vagas"/>
                 </Text>
-                <img className="icon" src={vagasIcon} alt="" />
+                {/* <img className="icon" src={vagasIcon} alt="" /> */}
+                <Img imagem={vagasIcon} classe="icon"/>
             </FlexContainer>
 
             <FlexContainer secao="pessoas">

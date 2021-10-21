@@ -3,7 +3,9 @@ import CardFounders from "../components/CardFounders";
 import css from "../assets/css/inspiracoes.module.css";
 import Button from "../components/Button";
 import Noticias from "../components/noticias";
-
+import logo from "../assets/img/inspiracoes-icon-overLoop-logopreto.png";
+import Footer from "../components/Footer";
+import Carrossel from "../components/InspCarousel";
 
 const founders = [
   {
@@ -62,15 +64,19 @@ function Inspiracoes() {
         pharase="Conheça um pouco sobre a história dessas pessoas incríveis que fizeram e fazem carreira no mundo da computação."
       />
       
-      
-      <Noticias/>
+     <Carrossel/>
+
+      <div className={css.noticias}>
+        <h2>Noticias - Últimas Novidades</h2>
+        {/* su<Noticias/> */}
+      </div>
       
       <div className={css.fundadoras}>
         <div className={css.container}>
 
           <div className={css.titulo}>
             <h2>MATK - Fundadoras do</h2>
-            <img src="img/inspiracoes-icon-overLoop-logopreto.png" alt="Logo da overLoop"/>
+            <img src={logo} alt="Logo da overLoop"/>
           </div>
 
           <div className={css.galery}>
@@ -100,7 +106,9 @@ function Inspiracoes() {
         <a href="nps.html"><Button text="Buscar"/></a>
         <br/>
       </div>
-      
+
+        
+      <Footer />
     </>
   );
 }

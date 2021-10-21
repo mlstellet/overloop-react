@@ -8,6 +8,7 @@ import Banner from "../components/Banner"
 import FlexContainer from "../components/FlexContainer"
 import Slider from "../components/Slider"
 import Quadro from "../components/Quadro"
+import Carousel from "../components/Carousel"
 import Button from "../components/Button"
 import H2 from "../components/H2"
 import P from "../components/P"
@@ -72,23 +73,7 @@ function Home() {
 
             <FlexContainer secao="mulheres">
                 <H2 h2="Mulheres em destaque" />
-
-                    <div className="glider-contain">
-                        <div className="glider">
-                            <img src="../img/foto1-mulherdestaque-home.png" alt="" />
-                            <img src="../img/foto2-mulherdestaque-home.png" alt="" />
-                            <img src="../img/foto3-mulherdestaque-home.png" alt="" />
-                            <img src="../img/foto4-mulherdestaque-home.png" alt="" />
-                            <img src="../img/foto1-mulherdestaque-home.png" alt="" />
-                            <img src="../img/foto4-mulherdestaque-home.png" alt="" />
-                            <img src="../img/foto3-mulherdestaque-home.png" alt="" />
-                            <img src="../img/foto2-mulherdestaque-home.png" alt="" />
-                        </div>
-                    
-                        <button aria-label="Previous" className="glider-prev">«</button>
-                        <button aria-label="Next" className="glider-next">»</button>
-                        <div role="tablist" className="dots"></div>
-                    </div>
+                    <Carousel />
             </FlexContainer>
 
             <FlexContainer secao="code-break" />

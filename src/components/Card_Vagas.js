@@ -32,9 +32,7 @@ const TituloArtigo = styled.h3`
     overflow: hidden;
     
     @media(max-width:1070px) {
-        h3 {
-            text-align: center;
-        }
+        text-align: center;
     }
 `
 const Info = styled.div`
@@ -48,13 +46,11 @@ const Info = styled.div`
     border-radius: 10px;
 
     @media(max-width:1070px) {
-        .info {
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
 
-            gap: 40px;
-        }
+        gap: 40px;
     }
 `
 

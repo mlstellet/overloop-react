@@ -34,11 +34,19 @@ LS.NavFixedItem_LINK = styled(Link)`
     &:active {
         transform: scale(0.96);
     }
+
+    @media(max-width: 830px) {
+        top: 0;
+        left: 0;
+        transform: translateX(25%);
+        background-color: #F05454;
+    }
 `
 
 Button.propTypes = {
     link: PropTypes.string.isRequired,
-    text: PropTypes.string
+    text: PropTypes.string,
+    classe: PropTypes.string
 }
 
 Button.defaultProps = {
@@ -47,7 +55,7 @@ Button.defaultProps = {
 
 export default function Button(props) {
     return (
-        <LS.NavFixedItem_LINK to={props.link}>
+        <LS.NavFixedItem_LINK to={props.link} className={props.classe}>
             {props.text}
         </LS.NavFixedItem_LINK>
     )

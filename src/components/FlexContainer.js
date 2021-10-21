@@ -36,10 +36,11 @@ const Container = styled.div`
 
     gap: 4rem;
 
-    @media(max-width: 620px) {
+    @media(max-width: 830px) {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 `
 

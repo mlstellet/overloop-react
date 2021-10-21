@@ -10,6 +10,12 @@ const Container = styled.div`
         "foto-1 foto-2 foto-2"
         "foto-1 foto-4 foto-5"
         "foto-3 foto-4 foto-5";
+
+    @media(max-width: 1060px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 `
 
 const painel = [

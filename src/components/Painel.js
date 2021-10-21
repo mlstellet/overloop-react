@@ -18,6 +18,11 @@ const Container = styled.div`
         height: 500px;
         min-height: 200px;
     }
+
+    @media(max-width: 1060px) {
+        width: 100%;
+        height: 200px;
+    }
 `
 
 const P = styled.p`

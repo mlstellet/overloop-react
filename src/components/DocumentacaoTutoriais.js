@@ -1,6 +1,5 @@
 // import stack from '../assets/img/tutoriais-stacko.svg'
 import css from '../assets/css/cardDocumentacao.module.css'
-import styled from 'styled-components';
 
 
 const links = [

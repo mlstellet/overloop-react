@@ -7,9 +7,7 @@ const Article = styled.article`
     padding: 60px 0;
 
     @media (max-width: 743px) {
-        article {
-            text-align: center;
-        }
+        text-align: center;
     }
 `
 
@@ -24,11 +22,9 @@ const Container = styled.div`
     margin: 0 auto;
 
     @media (max-width: 899px) {
-        div {
-            margin: 0 auto;
-            padding-bottom: 0;
-            gap: 0;
-        }
+        margin: 0 auto;
+        padding-bottom: 0;
+        gap: 0;
     }
 `
 
@@ -49,9 +45,7 @@ const P = styled.p`
     max-width: 100%;
 
     @media (max-width: 743px) {
-        p {
-            text-align: center;
-        }
+        text-align: center;
     }
 `
 
@@ -60,9 +54,7 @@ const Img = styled.img`
     max-width: 100%;
 
     @media (max-width: 743px) {
-        article img {
-            margin-top: 50px;
-        }
+        margin-top: 50px;
     }
 `
 
@@ -87,30 +79,10 @@ const Texto = styled.div`
     font-family: 'Urbanist', sans-serif;
 
     @media (max-width: 899px) {
-        div {
-            margin: 30px;
-            width: 500px;
-        }
+        margin: 30px;
+        width: 500px;
     }
 `
-
-// .container h2 {
-//     font-family: 'Urbanist', sans-serif;
-//     font-weight: 400;
-//     margin-top: 50px;
-//     max-width: 100%;
-// }
-
-
-//  @media (max-width: 899px) {
-//     .outras-fontes .container h2 {
-//         text-align: center;
-//         margin-bottom: 45px;
-//     }
-//       h2 {
-//         margin-bottom: 0;
-//     }
-// } 
 
 
 function CardTutoriais({data}) {

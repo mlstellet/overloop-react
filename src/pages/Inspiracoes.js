@@ -55,6 +55,30 @@ const founders = [
   },
 ];
 
+const profissionals = [
+  {
+    area: "Data Science",
+    name: "Maria Luiza",
+    role: "Estagiária de Engenharia",
+    avatar: "/img/inspiracoes-fotokhiara.png",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+  },
+  {
+    area: "Data Science",
+    name: "Maria Luiza",
+    role: "Estagiária de Engenharia",
+    avatar: "/img/inspiracoes-fotoamanda.png",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+  },
+  {
+    area: "Data Science",
+    name: "Maria Luiza",
+    role: "Estagiária de Engenharia",
+    avatar: "/img/inspiracoes-fotomaria.png",
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+  },
+];
+
 function Inspiracoes() {
   return (
     <>
@@ -64,11 +88,24 @@ function Inspiracoes() {
         pharase="Conheça um pouco sobre a história dessas pessoas incríveis que fizeram e fazem carreira no mundo da computação."
       />
       
-     <Carrossel/>
+     {/* <div>
+      {profissionals.map((prof) => (
+          <Carrossel
+            key= {prof.name}
+            area = {prof.area}
+            role={prof.role}
+            avatar={prof.avatar}
+            description={prof.description}
+          />
+      ))}
+      </div> */}
+
+      <Carrossel/>
 
       <div className={css.noticias}>
         <h2>Noticias - Últimas Novidades</h2>
-        {/* su<Noticias/> */}
+        
+        {/* <Noticias/> */}
       </div>
       
       <div className={css.fundadoras}>

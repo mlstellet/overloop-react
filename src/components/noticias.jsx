@@ -43,6 +43,7 @@ function getNews(newsList) {
 }
 
 function Noticias(props) {
+  
   const [news, setNews] = useState(null);
   fetch(URL)
     .then((response) => response.json())

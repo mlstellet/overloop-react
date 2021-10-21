@@ -62,7 +62,7 @@ button.call-to-action a {
 }
 
 /* carrosel */
-.profissoes .container {
+.profissoes  {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -74,12 +74,12 @@ button.call-to-action a {
     padding-bottom: 50px;
 }
 
-.profissoes .container .subtitulo {
+.profissoes .subtitulo {
     display: block;
     margin-left: 50px;
 }
 
-.profissoes .container .info {
+.profissoes .info {
     padding: 0 50px;
     display: flex;
     align-items: center;
@@ -88,19 +88,19 @@ button.call-to-action a {
     letter-spacing: 1px;
 }
 
-.profissoes .container .info .fotos img{
+.profissoes .info .fotos img{
     width: 100%;
     max-width: 450px;
 }
 
-.profissoes .container .info .texto {
+.profissoes .info .texto {
     display: flex;
     flex-direction: column;
     max-width: 430px;
     width: 100%;
 }
 
-.profissoes .container .info .texto .titulo {
+.profissoes .info .texto .titulo {
     margin-bottom: 30px;
 }
 

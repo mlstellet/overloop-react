@@ -6,17 +6,17 @@ function Avaliacao(props) {
         <div>
             <div className={css.recomenda}>
                 <p>O quanto você recomendaria este site a outra pessoa?</p>
-                <Botao setValue={props.recomenda}/>
+                <Botao setValue={props.recomenda} classe="recomenda"/>
             </div>
 
             <div className={css.facil}>
                 <p>O quanto você achou este site fácil de usar?</p>
-                <Botao setValue={props.facil}/>
+                <Botao setValue={props.facil} classe="facil"/>
             </div>
 
             <div className={css.util} id="util">
                 <p>O quanto você achou este site útil?</p>
-                <Botao setValue={props.util}/>
+                <Botao setValue={props.util} classe="util"/>
             </div>
         </div>
     );

@@ -47,3 +47,7 @@
     transition: 0.4s;
     background: #1F1D1D;
 } 
+
+.escolhido {
+    background-color: #222831 !important; 
+}

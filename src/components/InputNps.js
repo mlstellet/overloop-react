@@ -1,13 +1,10 @@
-function InputNps() {
+
+
+export default function InputNps(props) {
     return (
         <div>
-            <label for="nome">Nome*:</label>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui" required />
-
-            <label for="email">Email*:</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu email aqui" required />
+            <label htmlFor={props.id}>{props.nome}</label>
+            <input type={props.type} id={props.id} placeholder={props.placeholder} value={props.value} onChange={e => props.setValue(e.target.value)} required />
         </div>
     );
 }
-
-export default InputNps;

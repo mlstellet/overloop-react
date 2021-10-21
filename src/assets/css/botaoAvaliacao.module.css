@@ -1,0 +1,49 @@
+
+.paginacao {
+    margin-top: 20px;
+}
+
+.paginacao button {
+    background-color: #F05454;
+    color: #fff;
+    padding: 11px 17px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 6px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.paginacao .button1 {
+    background-color: #F05454;
+    color: #fff;
+    padding: 11px 19px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 6px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.paginacao .button10 {
+    background-color: #F05454;
+    color: #fff;
+    padding: 11px 14px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 6px;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.paginacao button:hover {
+    transition: 0.6s;
+    background: #1F1D1D;
+}
+.paginacao button:active {
+    transition: 0.4s;
+    background: #1F1D1D;
+} 

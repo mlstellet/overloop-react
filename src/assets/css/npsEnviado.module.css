@@ -1,0 +1,35 @@
+
+section.top {
+    padding-top: 20px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.top p {
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+section.content {
+    width: 100vw;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.content img {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 800px) {
+        section.top {
+            margin: 190px 0 0;
+        }
+}

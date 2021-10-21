@@ -26,13 +26,11 @@ function Home() {
                         O overLoop é um portal de comunicação de tecnologia. Aqui você poderá encontrar diferentes assuntos que envolvam inovação, criatividade, aprendizado e muita, mais muita colaboração!
                     </P>
                 </Text>
-                {/* <img src={sobreFoto} alt="" /> */}
-                <Img imagem={sobreFoto} classe="foto" />
+                <Img imagem={sobreFoto} />
             </FlexContainer>
 
             <FlexContainer secao="missao-valores">
-                    {/* <img className="icon" src={missaoIcon} alt="" /> */}
-                    <Img imagem={missaoIcon} classe="icon"/>
+                    <Img imagem={missaoIcon} />
                     <Text>
                         <H2 h2="Missão" />
                         <P>
@@ -55,10 +53,9 @@ function Home() {
                     <P>
                         Conheça as vagas disponíveis no mercado para as áreas de de front-end, back-end, ciência de dados, Dev-ops e muitas outras.
                     </P>
-                    <Button text="Buscar" link="/vagas"/>
+                    <Button text="Buscar" link="/vagas" classe="vagas"/>
                 </Text>
-                {/* <img className="icon" src={vagasIcon} alt="" /> */}
-                <Img imagem={vagasIcon} classe="icon"/>
+                <Img imagem={vagasIcon} />
             </FlexContainer>
 
             <FlexContainer secao="pessoas">

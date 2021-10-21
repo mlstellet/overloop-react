@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Banner from "../components/Banner"
 import FlexContainer from "../components/FlexContainer"
-import Slider from "../components/Slider"
+import SlideT from "../components/SlideT"
 import Quadro from "../components/Quadro"
 import Carousel from "../components/Carousel"
 import Button from "../components/Button"
@@ -78,7 +78,7 @@ function Home() {
             <FlexContainer secao="tutoriais">
                 <H2 h2="Tutoriais" />
 
-                    <Slider />
+                    <SlideT />
 
                     <P>
                         Aprenda com os melhores e o melhor: <strong>de graça!</strong>

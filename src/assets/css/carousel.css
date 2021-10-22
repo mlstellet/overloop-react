@@ -18,8 +18,6 @@
   object-fit: cover;
 }
 
-
-
 .content {
   padding: 20px;
   margin: auto;
@@ -86,6 +84,8 @@
   color: #222831;
 }
 
+
+/* CAROUSEL PAGINA INSPIRACOES */
 .profissoes {
   display: flex;
   justify-content: flex-start;
@@ -103,18 +103,6 @@
   margin-left: 50px;
 }
 
-.profissoes .false {
-  display: block;
-  text-align: end;
-  
-}
-
-.profissoes .false h2 {
-  display: block;
-  padding-left: 20px;
-  text-align: end;
-}
-
 .profissoes .info{
   display: flex;
   flex-direction: row;
@@ -123,22 +111,8 @@
   letter-spacing: 1px;
 }
 
-.profissoes .false{
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  line-height: 25px;
-  letter-spacing: 1px;
-}
-
-
 .profissoes .info .fotos {
   margin-right: 90px;
-  width: 100%;
-}
-
-.profissoes  .false {
-  margin-left: 90px;
   width: 100%;
 }
 
@@ -157,6 +131,32 @@
   margin-bottom: 30px;
 }
 
+/* CLASSE FALSE */
+.profissoes.false .info{
+  flex-direction: row-reverse;
+  margin: auto;
+}
+
+.profissoes.false .subtitulo {
+  width: 100%;
+  text-align: end;
+  margin: 0;
+  padding-right: 100px;
+}
+
+.profissoes.false .info .fotos img {
+  margin-left: 100px;
+}
+
+.profissoes.false .info {
+  text-align: end;
+}
+
+.profissoes .false h2 {
+  display: block;
+  padding-left: 20px;
+}
+
 @media (max-width: 980px) {
   .profissoes .info {
     width: 100%;
@@ -171,6 +171,33 @@
   }
 
   .profissoes .info {
+    flex-direction: column;
+  }
+
+  /* FALSE */
+  .profissoes.false .info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profissoes.false .info {
+    margin-right: 10px;
+  }
+
+  .profissoes.false .info .fotos img {
+    margin: 0;
+  }
+
+  .profissoes.false .info .fotos {
+    width: 350px;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profissoes.false .info {
     flex-direction: column;
   }
 }

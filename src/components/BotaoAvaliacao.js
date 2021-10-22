@@ -7,7 +7,6 @@ function BotaoAvaliacao({ setValue, classe }) {
     // após renderizar a tela
     useEffect(() => {
         buttons = document.querySelectorAll("." + classe)
-        console.log(buttons)
     })
 
     const clicado = (e) => {

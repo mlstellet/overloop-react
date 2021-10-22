@@ -26,42 +26,6 @@ h2 {
     display: inline-block;
 }
 
-button.call-to-action a {
-    color: white;
-}
-
-.banner {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 2100px;
-    width: 100%;
-    margin: 0 auto;
-    height: 505px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 15px;
-}
-
-.banner h1 {
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-weight: 400;
-    padding: 5px;
-    letter-spacing: 10px;
-}
-
-.banner p {
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-
 /* noticias */
 .noticias {
     background-color: #f054541a;
@@ -97,15 +61,17 @@ button.call-to-action a {
 }
 
 .noticias .container .info {
-    max-width: 100%;
+    max-width: 600px;
     gap: 20px;
     flex-direction: column;
 }
 
-.noticias .container  .info p {
+.noticias .container .info p {
     text-align: left;
     line-height: 25px;
     letter-spacing: 1px;
+
+    margin-top: 10px;
 }
 
 .noticias .container  .info p a {
@@ -116,13 +82,24 @@ button.call-to-action a {
     text-decoration: underline;
 }
 
-.noticias .container  .text {
+.noticias .container .text {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: black;
     font-size: 20px;
     flex-wrap: wrap;
+}
+
+.noticias .container .text h3 {
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.noticias .container .text small {
+    font-weight: bold;
+    color: #5a5a5a;
+    margin-bottom: 10px;
 }
 
 /* pagina fundadoras */
@@ -181,6 +158,37 @@ button.call-to-action a {
     letter-spacing: 1px;
 }
 
+@media(max-width: 1400px) {
+    .noticias .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .noticias .container .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .noticias .container .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .noticias .container .info .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .noticias .container .info h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .noticias .container .info p {
+        text-align: center;
+    }
+}
+
 @media (max-width: 1070px){
     .profissoes .info {
         width: 100%;
@@ -221,6 +229,9 @@ button.call-to-action a {
     }
     .fundadoras .container .titulo h2{
         border: 0px;
+    }
+    .noticias .container .image img {
+        width: 100%;
     }
 }
 

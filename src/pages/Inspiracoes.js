@@ -7,8 +7,7 @@ import logo from "../assets/img/inspiracoes-icon-overLoop-logopreto.png";
 import Footer from "../components/Footer";
 import Carrossel from "../components/InspCarousel";
 import Slider from "react-slick";
-import "../assets/css/carousel.css"
-
+import "../assets/css/carousel.css";
 
 const founders = [
   {
@@ -58,36 +57,109 @@ const founders = [
   },
 ];
 
-const profissionals = [
-  {
-    area: "Data Science",
-    name: "Maria Luiza",
-    role: "Estagiária de Engenharia",
-    avatar: "/img/inspiracoes-foto1.png",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+const profissionals = {
+  primeiro : {
+    
+    array: [
+      {
+      area: "Ciência de Dados",
+      name: "Carol Seixas",
+      lado:"true",
+      role: "Estagiária",
+      avatar: "/img/inspiracoes-foto1.png",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+    },
+    {
+      area: "Internet das Coisas",
+      name: "Beatriz da Silva",
+      role: "Gerente de Projetos",
+      avatar: "/img/inspiracoes-foto2.png",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+    },
+    {
+      area: "Cybersegurança ",
+      name: "Valentina Aurora",
+      role: "Analista Sênior de Segurança",
+      avatar: "/img/inspiracoes-foto3.png",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+    }
+    ],
   },
-  {
-    area: "Data Science",
-    name: " Luiza",
-    role: "Estagiária de Engenharia",
-    avatar: "/img/inspiracoes-foto2.png",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+  segundo : {
+    
+    array :[
+      {
+        area: "Internet das Coisas",
+        name: "Beatriz da Silva",
+        lado:"false",
+        role: "Gerente de Projetos",
+        avatar: "/img/inspiracoes-foto2.png",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+      },
+      {
+        area: "Cybersegurança ",
+        name: "Valentina Aurora",
+        lado:"false",
+        role: "Analista Sênior de Segurança",
+        avatar: "/img/inspiracoes-foto3.png",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+      },
+      {
+        area: "Ciência de Dados",
+        name: "Carol Seixas",
+        lado:"false",
+        role: "Estagiária",
+        avatar: "/img/inspiracoes-foto1.png",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+      },
+    ],
   },
-  {
-    area: "Data Science",
-    name: "Maria ",
-    role: "Estagiária de Engenharia",
-    avatar: "/img/inspiracoes-foto3.png",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
-  },
-];
+  terceiro: {
+    
+    array:[
+      {
+        area: "Cybersegurança ",
+        name: "Valentina Aurora",
+        lado: "true",
+        role: "Analista Sênior de Segurança",
+        avatar: "/img/inspiracoes-foto3.png",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+      },
+      {
+        area: "Ciência de Dados",
+        name: "Carol Seixas",
+        lado: "true",
+        role: "Estagiária",
+        avatar: "/img/inspiracoes-foto1.png",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+      },
+      {
+        area: "Internet das Coisas",
+        name: "Beatriz da Silva",
+        lado: "true",
+        role: "Gerente de Projetos",
+        avatar: "/img/inspiracoes-foto2.png",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
+      },
+    ]
+  }
+  
+};
 
 function Inspiracoes() {
-
   const settings = {
     // autoplay:true,
     // autoplayspeed: 3000,
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     adaptiveHeight: false,
@@ -101,8 +173,8 @@ function Inspiracoes() {
           slidesToShow: 1,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 800,
@@ -110,16 +182,16 @@ function Inspiracoes() {
           slidesToShow: 1,
           slidesToScroll: 2,
           initialSlide: 2,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   return (
@@ -130,66 +202,67 @@ function Inspiracoes() {
         pharase="Conheça um pouco sobre a história dessas pessoas incríveis que fizeram e fazem carreira no mundo da computação."
       />
 
-
-      <div className="containerzao" >
+      <div className="containerzao">
         <Slider {...settings}>
-        {profissionals.map((prof) => (
-            <Carrossel
-              key= {prof.name}
-              name = {prof.name}
-              area = {prof.area}
+          {profissionals.primeiro.array.map((prof) => (
+            <Carrossel 
+              key={prof.name}
+              classe={prof.lado}
+              name={prof.name}
+              area={prof.area}
               role={prof.role}
               avatar={prof.avatar}
               description={prof.description}
             />
-        ))}
+          ))}
         </Slider>
       </div>
-      
 
-
-      <div className="containerzao" >
-        <Slider {...settings} >
-        {profissionals.map((prof) => (
-            <Carrossel
-              key= {prof.name}
-              name = {prof.name}
-              area = {prof.area}
-              role={prof.role}
-              avatar={prof.avatar}
-              description={prof.description}
-            />
-        ))}
-        </Slider>
+      <div style={{ backgroundColor: "#f054541a" }}>
+        <div className="containerzao">
+          <Slider {...settings}>
+            {profissionals.segundo.array.map((prof) => (
+              <Carrossel
+                key={prof.name}
+                classe={prof.lado}
+                name={prof.name}
+                area={prof.area}
+                role={prof.role}
+                avatar={prof.avatar}
+                description={prof.description}
+              />
+            ))}
+          </Slider>
+        </div>
       </div>
-      
-      <div className="containerzao" >
-        <Slider {...settings}> 
-        {profissionals.map((prof) => (
+
+      <div className="containerzao">
+        <Slider {...settings}>
+          {profissionals.terceiro.array.map((prof) => (
             <Carrossel
-              key= {prof.name}
-              name = {prof.name}
-              area = {prof.area}
+              key={prof.name}
+              classe={prof.lado}
+              name={prof.name}
+              area={prof.area}
               role={prof.role}
               avatar={prof.avatar}
               description={prof.description}
             />
-        ))}
+          ))}
         </Slider>
       </div>
 
       <div className={css.noticias}>
         <h2>Noticias - Últimas Novidades</h2>
-        
-        {/* <Noticias/> */}
+
+        <Noticias />
       </div>
-      
+
       <div className={css.fundadoras}>
         <div className={css.container}>
-
           <div className={css.titulo}>
             <h2>MATK - Fundadoras do</h2>
-            <img src={logo} alt="Logo da overLoop"/>
+            <img src={logo} alt="Logo da overLoop" />
           </div>
 
           <div className={css.galery}>
@@ -203,24 +276,16 @@ function Inspiracoes() {
               />
             ))}
           </div>
-
         </div>
       </div>
-    
+
       <div className={css.nps}>
         <h2>Ajude-nos a melhorar</h2>
-
-        <p>Lorem ipsum dolor sit amet consectetur <br/>
-            adipisicing elit. Culpa illo obcaecati asperiores sit doloremque vitae maxime, <br/>
-            aliquid quis placeat id quaerat.
-        </p>
-        <br/>
-
-        <Button text="Avalie!" link="/nps"/>
-        <br/>
+        <p>Responda nosso formulário para que possamos melhorar nosso site</p>
+        <Button text="Avalie!" link="/nps" />
+        <br></br>
       </div>
 
-        
       <Footer />
     </>
   );

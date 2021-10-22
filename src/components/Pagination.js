@@ -68,7 +68,7 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
     // após renderizar a tela
     React.useEffect(() => {
         buttons = document.querySelectorAll('.butPagina')
-        console.log(buttons)
+        
     })
 
     const clicado = (e, i) => {
@@ -83,7 +83,6 @@ export default function Pagination({ postPerPage, totalPosts, paginate }) {
         <Nav>
             <Ul>
                 {Array.apply(0, Array(pageNumbers.length)).map((x, i) => {
-                    console.log("X:" + x,"I:" + i)
                     if (i === 0) {
                         return (
                             <Itens key={i}>

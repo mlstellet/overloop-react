@@ -32,7 +32,6 @@ export default function QuadroVagas() {
             console.error("ops! ocorreu um erro" + err);
           });
     }, [keyword]);
-    console.log(vagas)
 
     // Pegando o post atual
     const indexUltimoPost = atualPage * postPerPage;

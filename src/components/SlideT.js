@@ -19,7 +19,7 @@ export default function SlideT() {
             breakpoint: 1024,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 3,
+              slidesToScroll: 1,
               infinite: true,
               dots: true
             }
@@ -28,15 +28,15 @@ export default function SlideT() {
             breakpoint: 800,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 3,
-              initialSlide: 2
+              slidesToScroll: 1,
+              initialSlide: 0
             }
           },
           {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 3
+              slidesToScroll: 1
             }
           }
         ]
@@ -50,10 +50,10 @@ export default function SlideT() {
             <img className="imagensSlide"  src="/img/home-slider1.png" alt="" />
           </div>
           <div className="containerImagem">
-             <img className="imagensSlide" src="/img/home-slider2.png" alt="" />
+             <img className="imagensSlide" src="/img/home-slider2.jpg" alt="" />
           </div>
           <div className="containerImagem">
-             <img className="imagensSlide" src="/img/home-slider3.png" alt="" />
+             <img className="imagensSlide" src="/img/home-slider3.jpg" alt="" />
           </div>
         </Slider>
       </div>

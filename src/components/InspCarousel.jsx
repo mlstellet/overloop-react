@@ -1,34 +1,35 @@
-// import  Swiper  from 'Swiper/React';
-// import SwiperSlide from 'Swiper/React';
-// Import Swiper styles
-import '../assets/css/swiper.css';
-import logo from "../assets/img/inspiracoes-icon-overLoop-logopreto.png";
+// import "~slick-carousel/slick/slick.css"; 
+// import "~slick-carousel/slick/slick-theme.css";
+import "../assets/css/carousel.css"
+import Slider from "react-slick";
 
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-//     import './swiper.css';
-
-function Carrossel() {
+function Carrossel(props) {
+  
     
     return (
-        <>
-        <Carousel>
-            <div>
-                <img src={logo} />
-                <p >Legend 1</p>
-            </div>
-            <div>
-                <img src={logo} />
-                <p >Legend 2</p>
-            </div>
-            <div>
-                <img src={logo} />
-                <p >Legend 3</p>
-            </div>
-        </Carousel>
-        </>
+
+            <div className="profissoes"> 
+                <div className="subtitulo">
+                    <h2>{props.area}</h2>
+                </div>
+
+                <div className="info">
+                    <div className="fotos">
+                    <img src={props.avatar} alt=""/>
+                    </div>
+
+                    <div className="texto">
+                        <div className="titulo">
+                            <h3>{props.name}</h3>
+                            <h4>{props.role}</h4>
+                        </div>
+
+                        <p>{props.description}</p>
+                    </div>
+                </div>
+            </div> 
+
     );
-     
   
 }
 

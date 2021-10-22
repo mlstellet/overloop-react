@@ -6,6 +6,8 @@ import Noticias from "../components/noticias";
 import logo from "../assets/img/inspiracoes-icon-overLoop-logopreto.png";
 import Footer from "../components/Footer";
 import Carrossel from "../components/InspCarousel";
+import Slider from "react-slick";
+
 
 const founders = [
   {
@@ -80,6 +82,45 @@ const profissionals = [
 ];
 
 function Inspiracoes() {
+  
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    adaptiveHeight: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          initialSlide: 2,
+         
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <Banner
@@ -88,7 +129,7 @@ function Inspiracoes() {
         pharase="Conheça um pouco sobre a história dessas pessoas incríveis que fizeram e fazem carreira no mundo da computação."
       />
       
-     {/* <div>
+      <Slider {...settings}>
       {profissionals.map((prof) => (
           <Carrossel
             key= {prof.name}
@@ -98,9 +139,31 @@ function Inspiracoes() {
             description={prof.description}
           />
       ))}
-      </div> */}
+      </Slider>
 
-      <Carrossel/>
+      <Slider {...settings} style={{backgroundColor:'#f054541a'}}>
+      {profissionals.map((prof) => (
+          <Carrossel
+            key= {prof.name}
+            area = {prof.area}
+            role={prof.role}
+            avatar={prof.avatar}
+            description={prof.description}
+          />
+      ))}
+      </Slider>
+
+      <Slider {...settings}>
+      {profissionals.map((prof) => (
+          <Carrossel
+            key= {prof.name}
+            area = {prof.area}
+            role={prof.role}
+            avatar={prof.avatar}
+            description={prof.description}
+          />
+      ))}
+      </Slider>
 
       <div className={css.noticias}>
         <h2>Noticias - Últimas Novidades</h2>
@@ -140,7 +203,7 @@ function Inspiracoes() {
         </p>
         <br/>
 
-        <a href="nps.html"><Button text="Buscar"/></a>
+        <Button text="Avalie!" link="/nps"/>
         <br/>
       </div>
 

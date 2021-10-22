@@ -103,7 +103,19 @@
   margin-left: 50px;
 }
 
-.profissoes .info {
+.profissoes .false {
+  display: block;
+  text-align: end;
+  
+}
+
+.profissoes .false h2 {
+  display: block;
+  padding-left: 20px;
+  text-align: end;
+}
+
+.profissoes .info{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -111,8 +123,22 @@
   letter-spacing: 1px;
 }
 
+.profissoes .false{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+
 .profissoes .info .fotos {
   margin-right: 90px;
+  width: 100%;
+}
+
+.profissoes  .false {
+  margin-left: 90px;
   width: 100%;
 }
 

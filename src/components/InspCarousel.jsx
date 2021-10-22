@@ -4,11 +4,11 @@ function Carrossel(props) {
   return (
     <>
       <div className="profissoes">
-        <div className="subtitulo">
+        <div className={[" subtitulo "] + props.classe}>
           <h2>{props.area}</h2>
         </div>
 
-        <div className="info">
+        <div className={[" info "]+ props.classe}>
           <div className="fotos">
             <img src={props.avatar} alt="" />
           </div>

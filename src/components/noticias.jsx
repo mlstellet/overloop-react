@@ -3,7 +3,7 @@ import css from "../assets/css/inspiracoes.module.css";
 import axios from "axios";
 
 // headline, standfirst, body
-const api_key = "fc31a41c-6d41-4cd3-b1ce-de28a1889f8a";
+const api_key = process.env.react_app_guardiankey;
 
 const api = axios.create({
     baseURL: `https://content.guardianapis.com/search?section=technology&q=technology&api-key=${api_key}&show-fields=thumbnail,trailText,starRating`,

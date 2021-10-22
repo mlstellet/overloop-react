@@ -3,12 +3,12 @@ import "../assets/css/carousel.css";
 function Carrossel(props) {
   return (
     <>
-      <div className="profissoes">
-        <div className={[" subtitulo "] + props.classe}>
+      <div className={[" profissoes "]+ props.classe}>
+        <div className="subtitulo">
           <h2>{props.area}</h2>
         </div>
 
-        <div className={[" info "]+ props.classe}>
+        <div className="info">
           <div className="fotos">
             <img src={props.avatar} alt="" />
           </div>

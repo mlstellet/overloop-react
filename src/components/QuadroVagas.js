@@ -15,7 +15,7 @@ export default function QuadroVagas() {
     const api_key = "e03cb2fc-44fa-493f-b3f0-582fb8f39288";
     const [vagas, setVagas] = useState([]);
     const { keyword } = useContext(BuscaContext);
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(false);
     const [atualPage, setAtualPage] = useState(1);
     const [postPerPage] = useState(9);
 

@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import css from "../assets/css/inspiracoes.module.css";
+import axios from "axios";
 
-const api_key = "b600c122-75d0-4c03-bcd2-684c5f16eb3e";
 
-const URL = `https://content.guardianapis.com/search?section=technology&q=technology&api-key=${api_key}&show-fields=thumbnail,trailText,starRating`;
 // headline, standfirst, body
+const api_key = "fc31a41c-6d41-4cd3-b1ce-de28a1889f8a";
+
+const api = axios.create({
+  baseURL: `https://content.guardianapis.com/search?section=technology&q=technology&api-key=${api_key}&show-fields=thumbnail,trailText,starRating`,
+
+  
+});
 
 function getNews(newsList) {
   var news = [];
@@ -13,8 +19,7 @@ function getNews(newsList) {
     const { webTitle, webUrl, webPublicationDate, fields } = noticias;
     news.push(
       <>
-      
-      <div className={css.container}>
+      <div className={css.container} >
         <div className={css.image}>
             <img src={fields.thumbnail} alt="noticia1" />
             </div>
@@ -43,13 +48,20 @@ function getNews(newsList) {
 }
 
 function Noticias(props) {
-  
-  const [news, setNews] = useState(null);
-  fetch(URL)
-    .then((response) => response.json())
-    .then((data) => setNews(getNews(data.response.results.slice(0, 3))));
 
+  const [news, setNews] = useState(null);
+  // const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    
+    api
+    .get()
+    .then((response) => setNews(response.results.slice(0, 3)))
+    .catch((err) => {
+      console.error("ops! ocorreu um erro" + err);
+    });
+  });
   return news;
 }
-
+// setNews(getNews(response.data.results.slice(0, 3))
 export default Noticias;

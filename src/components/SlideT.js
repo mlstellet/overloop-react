@@ -1,5 +1,3 @@
-import Slide from "./SlideT"
-import styled from "styled-components"
 import "../assets/css/carousel.css"
 import Slider from "react-slick";
 

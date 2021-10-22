@@ -1,145 +1,139 @@
 .containerzao {
-    width: 80vw;
-    margin: 0 auto;
-} 
+  width: 80vw;
+  margin: 0 auto;
+}
 
-.containerImagem{
-    height: 400px;
-    width: 300px;
-    overflow: hidden;
-    margin: 10px 0;
-    padding: 10px;
+.containerImagem {
+  height: 400px;
+  width: 300px;
+  overflow: hidden;
+  margin: 10px 0;
+  padding: 10px;
 }
 
 .imagensSlide {
-    float: left;
-    width:  100%;
-    height: 100%;
-    object-fit: cover;
+  float: left;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
-/* .imagensSlide {
-    object-position: center;
-    object-fit: contain;
-    width: 100%;
-    height: auto;
-} */
 
-  .content {
-    padding: 20px;
-    margin: auto;
-    width: 90%;
+.content {
+  padding: 20px;
+  margin: auto;
+  width: 90%;
+}
+.slick-slide .image {
+  padding: 10px;
+}
+.slick-slide img {
+  display: block;
+  margin: auto;
+}
+.slick-slide img.slick-loading {
+  border: 0;
+}
+.slick-slider {
+  margin: 30px auto 50px;
+}
+.slick-dots {
+  margin-left: 0;
+}
+.slick-thumb {
+  bottom: -45px;
+}
+.slick-thumb li {
+  width: 60px;
+  height: 45px;
+}
+.slick-thumb li img {
+  filter: grayscale(100%);
+}
+.slick-thumb li.slick-active img {
+  filter: grayscale(0%);
+}
+@media (max-width: 768px) {
+  .center {
+    margin-left: -40px;
+    margin-right: -40px;
   }
-  .slick-slide .image {
-    padding: 10px;
-  }
-  .slick-slide img {
-    display: block;
-    margin: auto;
-  }
-  .slick-slide img.slick-loading {
-    border: 0;
-  }
-  .slick-slider {
-    margin: 30px auto 50px;
-  }
-  .slick-dots {
-    margin-left: 0;
-  }
-  .slick-thumb {
-    bottom: -45px;
-  }
-  .slick-thumb li {
-    width: 60px;
-    height: 45px;
-  }
-  .slick-thumb li img {
-    filter: grayscale(100%);
-  }
-  .slick-thumb li.slick-active img {
-    filter: grayscale(0%);
-  }
-  @media (max-width: 768px) {
-    .center {
-      margin-left: -40px;
-      margin-right: -40px;
-    }
-  }
-  .slick-vertical .slick-slide {
-    height: 180px;
-  }
-  .slick-arrow {
-    background-color: grey;
-    /* color: black; */
-  }
-  .slick-arrow:hover {
-    background-color: grey;
-  }
+}
+.slick-vertical .slick-slide {
+  height: 180px;
+}
+.slick-arrow {
+  background-color: grey;
+  /* color: black; */
+}
+.slick-arrow:hover {
+  background-color: grey;
+}
 
-  .slick-next, .slick-prev {
-      background-color:  #f0545400;
-  }
+.slick-next,
+.slick-prev {
+  background-color: #f0545400;
+}
 
-  .slick-next:hover, .slick-prev:hover{
-      background-color: #f0545400;
-  }
+.slick-next:hover,
+.slick-prev:hover {
+  background-color: #f0545400;
+}
 
-  .slick-next::before, .slick-prev::before {
-      color: #222831;
-  }
+.slick-next::before,
+.slick-prev::before {
+  color: #222831;
+}
 
-  .profissoes  {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    position: relative;
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    
+.profissoes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .profissoes .subtitulo {
-    display: block;
-    margin-left: 50px;
+  display: block;
+  margin-left: 50px;
 }
 
 .profissoes .info {
-    display: flex;
-    align-items: center;
-    line-height: 25px;
-    letter-spacing: 1px;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 25px;
+  letter-spacing: 1px;
 }
 
-.profissoes .info .fotos{
+.profissoes .info .fotos {
   margin-right: 90px;
   width: 100%;
- 
 }
 
-.profissoes .info .fotos img{
+.profissoes .info .fotos img {
   max-width: 450px;
 }
 
 .profissoes .info .texto {
-    display: flex;
-    flex-direction: column;
-    max-width: 430px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  width: 100%;
 }
 
 .profissoes .info .texto .titulo {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-
-@media (max-width: 980px){
+@media (max-width: 980px) {
   .profissoes .info {
-      width: 100%;
+    width: 100%;
   }
 
   .profissoes .info {
@@ -147,12 +141,10 @@
   }
 
   .profissoes .info .fotos {
-      width: 350px;
+    width: 350px;
   }
-  
+
   .profissoes .info {
     flex-direction: column;
+  }
 }
-
-}
-

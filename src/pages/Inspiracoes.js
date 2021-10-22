@@ -145,13 +145,12 @@ function Inspiracoes() {
         ))}
         </Slider>
       </div>
-      
 
-
+      <div style={{backgroundColor: "#f054541a"}}>
       <div className="containerzao" >
         <Slider {...settings} >
         {profissionals.map((prof) => (
-            <Carrossel
+            <Carrossel 
               key= {prof.name}
               name = {prof.name}
               area = {prof.area}
@@ -162,7 +161,7 @@ function Inspiracoes() {
         ))}
         </Slider>
       </div>
-      
+      </div>
       <div className="containerzao" >
         <Slider {...settings}> 
         {profissionals.map((prof) => (

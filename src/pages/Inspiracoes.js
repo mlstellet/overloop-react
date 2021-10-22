@@ -181,7 +181,7 @@ function Inspiracoes() {
       <div className={css.noticias}>
         <h2>Noticias - Últimas Novidades</h2>
         
-        {/* <Noticias/> */}
+        <Noticias/>
       </div>
       
       <div className={css.fundadoras}>

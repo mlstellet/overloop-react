@@ -7,6 +7,7 @@ import logo from "../assets/img/inspiracoes-icon-overLoop-logopreto.png";
 import Footer from "../components/Footer";
 import Carrossel from "../components/InspCarousel";
 import Slider from "react-slick";
+import "../assets/css/carousel.css"
 
 
 const founders = [
@@ -62,28 +63,30 @@ const profissionals = [
     area: "Data Science",
     name: "Maria Luiza",
     role: "Estagiária de Engenharia",
-    avatar: "/img/inspiracoes-fotokhiara.png",
+    avatar: "/img/inspiracoes-foto1.png",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
   },
   {
     area: "Data Science",
-    name: "Maria Luiza",
+    name: " Luiza",
     role: "Estagiária de Engenharia",
-    avatar: "/img/inspiracoes-fotoamanda.png",
+    avatar: "/img/inspiracoes-foto2.png",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
   },
   {
     area: "Data Science",
-    name: "Maria Luiza",
+    name: "Maria ",
     role: "Estagiária de Engenharia",
-    avatar: "/img/inspiracoes-fotomaria.png",
+    avatar: "/img/inspiracoes-foto3.png",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam, vel quis architecto libero eius, sapiente corrupti quidem laboriosam beatae molestias explicabo delectus asperiores voluptas a, tempore repellat maxime quasi?",
   },
 ];
 
 function Inspiracoes() {
-  
+
   const settings = {
+    // autoplay:true,
+    // autoplayspeed: 3000,
     dots: true,
     infinite: false,
     speed: 500,
@@ -107,7 +110,6 @@ function Inspiracoes() {
           slidesToShow: 1,
           slidesToScroll: 2,
           initialSlide: 2,
-         
         }
       },
       {
@@ -115,7 +117,6 @@ function Inspiracoes() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          
         }
       }
     ]
@@ -128,42 +129,54 @@ function Inspiracoes() {
         url="/img/inspiracoes-banner.png"
         pharase="Conheça um pouco sobre a história dessas pessoas incríveis que fizeram e fazem carreira no mundo da computação."
       />
+
+
+      <div className="containerzao" >
+        <Slider {...settings}>
+        {profissionals.map((prof) => (
+            <Carrossel
+              key= {prof.name}
+              name = {prof.name}
+              area = {prof.area}
+              role={prof.role}
+              avatar={prof.avatar}
+              description={prof.description}
+            />
+        ))}
+        </Slider>
+      </div>
       
-      <Slider {...settings}>
-      {profissionals.map((prof) => (
-          <Carrossel
-            key= {prof.name}
-            area = {prof.area}
-            role={prof.role}
-            avatar={prof.avatar}
-            description={prof.description}
-          />
-      ))}
-      </Slider>
 
-      <Slider {...settings} style={{backgroundColor:'#f054541a'}}>
-      {profissionals.map((prof) => (
-          <Carrossel
-            key= {prof.name}
-            area = {prof.area}
-            role={prof.role}
-            avatar={prof.avatar}
-            description={prof.description}
-          />
-      ))}
-      </Slider>
 
-      <Slider {...settings}>
-      {profissionals.map((prof) => (
-          <Carrossel
-            key= {prof.name}
-            area = {prof.area}
-            role={prof.role}
-            avatar={prof.avatar}
-            description={prof.description}
-          />
-      ))}
-      </Slider>
+      <div className="containerzao" >
+        <Slider {...settings} >
+        {profissionals.map((prof) => (
+            <Carrossel
+              key= {prof.name}
+              name = {prof.name}
+              area = {prof.area}
+              role={prof.role}
+              avatar={prof.avatar}
+              description={prof.description}
+            />
+        ))}
+        </Slider>
+      </div>
+      
+      <div className="containerzao" >
+        <Slider {...settings}> 
+        {profissionals.map((prof) => (
+            <Carrossel
+              key= {prof.name}
+              name = {prof.name}
+              area = {prof.area}
+              role={prof.role}
+              avatar={prof.avatar}
+              description={prof.description}
+            />
+        ))}
+        </Slider>
+      </div>
 
       <div className={css.noticias}>
         <h2>Noticias - Últimas Novidades</h2>

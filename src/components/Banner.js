@@ -19,6 +19,8 @@ const Container = styled.section`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    
 `
 
 const SubTitle = styled.h2`
@@ -32,6 +34,14 @@ const SubTitle = styled.h2`
     border-bottom: 3px solid #fff;
     padding-bottom: 10px;
     padding-top: 500px;
+
+    @media(max-width: 670px) {
+        
+        padding-top:450px
+        
+    }
+
+  
 `
 
 const Title = styled.h1`

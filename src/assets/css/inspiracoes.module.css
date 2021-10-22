@@ -61,10 +61,6 @@ button.call-to-action a {
     font-weight: 400;
 }
 
-/* carrosel */
-
-
-
 
 /* noticias */
 .noticias {
@@ -190,11 +186,11 @@ button.call-to-action a {
         width: 100%;
     }
 
-    .profissoes .container .subtitulo{
+    .profissoes  .subtitulo{
         text-align: center;
     }
 
-    .profissoes .container .info .titulo {
+    .profissoes .info .titulo {
         text-align: center;
     }
 
@@ -207,10 +203,16 @@ button.call-to-action a {
         flex-direction: column;
     } 
 
-    .profissoes .container .info .fotos {
+    .profissoes .info .fotos {
         width: 350px;
     }
 
+}
+
+@media (max-width:780px) {
+    .profissoes .info {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 660px) {

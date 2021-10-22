@@ -99,6 +99,7 @@
     width: 100%;
     margin: 0 auto;
     padding-bottom: 50px;
+    
 }
 
 .profissoes .subtitulo {
@@ -107,17 +108,21 @@
 }
 
 .profissoes .info {
-    padding: 0 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     line-height: 25px;
     letter-spacing: 1px;
+    
+}
+
+.profissoes .info .fotos{
+  margin-right: 90px;
+  width: 100%;
+ 
 }
 
 .profissoes .info .fotos img{
-    width: 100%;
-    max-width: 450px;
+  max-width: 450px;
 }
 
 .profissoes .info .texto {
@@ -130,3 +135,24 @@
 .profissoes .info .texto .titulo {
     margin-bottom: 30px;
 }
+
+
+@media (max-width: 980px){
+  .profissoes .info {
+      width: 100%;
+  }
+
+  .profissoes .info {
+    margin-right: 10px;
+  }
+
+  .profissoes .info .fotos {
+      width: 350px;
+  }
+  
+  .profissoes .info {
+    flex-direction: column;
+}
+
+}
+

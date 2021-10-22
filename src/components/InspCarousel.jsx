@@ -1,13 +1,10 @@
-// import "~slick-carousel/slick/slick.css"; 
-// import "~slick-carousel/slick/slick-theme.css";
 import "../assets/css/carousel.css"
-import Slider from "react-slick";
 
 function Carrossel(props) {
   
     
     return (
-
+        <>
             <div className="profissoes"> 
                 <div className="subtitulo">
                     <h2>{props.area}</h2>
@@ -28,7 +25,7 @@ function Carrossel(props) {
                     </div>
                 </div>
             </div> 
-
+        </>
     );
   
 }

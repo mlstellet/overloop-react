@@ -52,4 +52,13 @@ footer a:hover {
     .copy {
         flex-wrap: wrap;
     }
+
 }
+
+@media(max-width: 400px) {
+   
+    .redes_sociais ul {
+        flex-direction: column;
+    }
+}
+

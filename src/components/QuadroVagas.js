@@ -12,7 +12,7 @@ const api = axios.create({
 });
 
 export default function QuadroVagas() {
-    const api_key = process.env.react_app_key;
+    const api_key = process.env.react_app_jooblekey;
     const [vagas, setVagas] = useState([]);
     const { keyword } = useContext(BuscaContext);
     const [loading, setLoading] = useState(false);

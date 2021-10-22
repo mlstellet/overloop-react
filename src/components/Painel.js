@@ -38,6 +38,8 @@ const P = styled.p`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
+
 
     opacity: 0;
     transition: 0.5s linear;

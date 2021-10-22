@@ -54,7 +54,7 @@ function Home() {
                     <P>
                         Conheça as vagas disponíveis no mercado para as áreas de de front-end, back-end, ciência de dados, Dev-ops e muitas outras.
                     </P>
-                    <Button text="Buscar" link="/vagas" classe="vagas"/>
+                    <Button text="Buscar" link="/vagas" classe="buttonVagasHome"/>
                 </Text>
                 <Img imagem={vagasIcon} />
             </FlexContainer>

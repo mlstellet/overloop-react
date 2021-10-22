@@ -42,3 +42,29 @@ body {
 .escolhido {
     background-color: #222831 !important;
 }
+
+@media(max-width: 830px) {
+    .buttonVagasHome {
+        top: 0;
+        left: 0;
+        transform: translateX(50%);
+    }
+}
+
+@media(max-width: 700px) {
+    .buttonVagasHome {
+        transform: translateX(40%);
+    }
+}
+
+@media(max-width: 600px) {
+    .buttonVagasHome {
+        transform: translateX(30%);
+    }
+}
+
+@media(max-width: 520px) {
+    .buttonVagasHome {
+        transform: translateX(20%);
+    }
+}
